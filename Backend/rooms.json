@@ -1,0 +1,3712 @@
+[
+  {
+    "roomId": "R001",
+    "roomType": "Deluxe",
+    "pricePerDay": 724000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R002",
+    "roomType": "Standard",
+    "pricePerDay": 176000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R003",
+    "roomType": "Standard",
+    "pricePerDay": 292000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R004",
+    "roomType": "VIP",
+    "pricePerDay": 2245000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R005",
+    "roomType": "Standard",
+    "pricePerDay": 194000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R006",
+    "roomType": "Deluxe",
+    "pricePerDay": 544000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R007",
+    "roomType": "Standard",
+    "pricePerDay": 234000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R008",
+    "roomType": "VIP",
+    "pricePerDay": 1855000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R009",
+    "roomType": "VIP",
+    "pricePerDay": 1015000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R010",
+    "roomType": "Standard",
+    "pricePerDay": 254000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R011",
+    "roomType": "VIP",
+    "pricePerDay": 1765000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R012",
+    "roomType": "Standard",
+    "pricePerDay": 258000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R013",
+    "roomType": "VIP",
+    "pricePerDay": 1675000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R014",
+    "roomType": "VIP",
+    "pricePerDay": 1180000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R015",
+    "roomType": "VIP",
+    "pricePerDay": 1180000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R016",
+    "roomType": "VIP",
+    "pricePerDay": 2020000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R017",
+    "roomType": "Standard",
+    "pricePerDay": 110000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R018",
+    "roomType": "Standard",
+    "pricePerDay": 272000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R019",
+    "roomType": "VIP",
+    "pricePerDay": 1060000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R020",
+    "roomType": "Standard",
+    "pricePerDay": 188000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R021",
+    "roomType": "Deluxe",
+    "pricePerDay": 548000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R022",
+    "roomType": "VIP",
+    "pricePerDay": 1480000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R023",
+    "roomType": "VIP",
+    "pricePerDay": 1930000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R024",
+    "roomType": "Deluxe",
+    "pricePerDay": 512000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R025",
+    "roomType": "VIP",
+    "pricePerDay": 1675000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R026",
+    "roomType": "VIP",
+    "pricePerDay": 1240000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R027",
+    "roomType": "Standard",
+    "pricePerDay": 220000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R028",
+    "roomType": "Standard",
+    "pricePerDay": 292000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R029",
+    "roomType": "Standard",
+    "pricePerDay": 236000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R030",
+    "roomType": "Deluxe",
+    "pricePerDay": 688000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R031",
+    "roomType": "Deluxe",
+    "pricePerDay": 464000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R032",
+    "roomType": "Deluxe",
+    "pricePerDay": 672000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R033",
+    "roomType": "VIP",
+    "pricePerDay": 1480000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R034",
+    "roomType": "VIP",
+    "pricePerDay": 1165000.000,
+    "isAvailable": false,
+    "services": [
+    {
+      "serviceName": "AirportPickup",
+      "price": 27000.000,
+      "quantity": 2
+    },
+    {
+      "serviceName": "Spa",
+      "price": 31400.000,
+      "quantity": 1
+    }
+    ]
+  },
+  {
+    "roomId": "R035",
+    "roomType": "Deluxe",
+    "pricePerDay": 712000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R036",
+    "roomType": "Standard",
+    "pricePerDay": 226000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R037",
+    "roomType": "Deluxe",
+    "pricePerDay": 712000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R038",
+    "roomType": "VIP",
+    "pricePerDay": 1900000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R039",
+    "roomType": "VIP",
+    "pricePerDay": 1225000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R040",
+    "roomType": "Deluxe",
+    "pricePerDay": 668000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R041",
+    "roomType": "Deluxe",
+    "pricePerDay": 504000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R042",
+    "roomType": "Deluxe",
+    "pricePerDay": 592000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R043",
+    "roomType": "Standard",
+    "pricePerDay": 194000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R044",
+    "roomType": "Deluxe",
+    "pricePerDay": 636000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R045",
+    "roomType": "Standard",
+    "pricePerDay": 146000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R046",
+    "roomType": "Deluxe",
+    "pricePerDay": 456000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R047",
+    "roomType": "VIP",
+    "pricePerDay": 2065000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R048",
+    "roomType": "Deluxe",
+    "pricePerDay": 556000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R049",
+    "roomType": "Deluxe",
+    "pricePerDay": 624000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R050",
+    "roomType": "Deluxe",
+    "pricePerDay": 656000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R051",
+    "roomType": "VIP",
+    "pricePerDay": 1480000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R052",
+    "roomType": "Deluxe",
+    "pricePerDay": 512000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R053",
+    "roomType": "Deluxe",
+    "pricePerDay": 588000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R054",
+    "roomType": "Standard",
+    "pricePerDay": 190000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R055",
+    "roomType": "Deluxe",
+    "pricePerDay": 612000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R056",
+    "roomType": "VIP",
+    "pricePerDay": 1405000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R057",
+    "roomType": "VIP",
+    "pricePerDay": 2380000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R058",
+    "roomType": "Standard",
+    "pricePerDay": 218000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R059",
+    "roomType": "VIP",
+    "pricePerDay": 1870000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R060",
+    "roomType": "Deluxe",
+    "pricePerDay": 496000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R061",
+    "roomType": "Standard",
+    "pricePerDay": 256000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R062",
+    "roomType": "Standard",
+    "pricePerDay": 272000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R063",
+    "roomType": "Deluxe",
+    "pricePerDay": 508000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R064",
+    "roomType": "VIP",
+    "pricePerDay": 1930000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R065",
+    "roomType": "Standard",
+    "pricePerDay": 130000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R066",
+    "roomType": "Deluxe",
+    "pricePerDay": 696000.000,
+    "isAvailable": false,
+    "services": [
+    {
+      "serviceName": "Breakfast",
+      "price": 30800.000,
+      "quantity": 1
+    }
+    ]
+  },
+  {
+    "roomId": "R067",
+    "roomType": "Deluxe",
+    "pricePerDay": 636000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R068",
+    "roomType": "VIP",
+    "pricePerDay": 2320000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R069",
+    "roomType": "Standard",
+    "pricePerDay": 242000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R070",
+    "roomType": "VIP",
+    "pricePerDay": 2065000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R071",
+    "roomType": "Standard",
+    "pricePerDay": 108000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R072",
+    "roomType": "Standard",
+    "pricePerDay": 238000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R073",
+    "roomType": "Standard",
+    "pricePerDay": 188000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R074",
+    "roomType": "Standard",
+    "pricePerDay": 254000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R075",
+    "roomType": "Deluxe",
+    "pricePerDay": 780000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R076",
+    "roomType": "Standard",
+    "pricePerDay": 196000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R077",
+    "roomType": "Standard",
+    "pricePerDay": 296000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R078",
+    "roomType": "Deluxe",
+    "pricePerDay": 796000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R079",
+    "roomType": "Standard",
+    "pricePerDay": 100000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R080",
+    "roomType": "Standard",
+    "pricePerDay": 106000.000,
+    "isAvailable": false,
+    "services": [
+    {
+      "serviceName": "Spa",
+      "price": 31400.000,
+      "quantity": 1
+    },
+    {
+      "serviceName": "Breakfast",
+      "price": 30800.000,
+      "quantity": 2
+    }
+    ]
+  },
+  {
+    "roomId": "R081",
+    "roomType": "Deluxe",
+    "pricePerDay": 588000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R082",
+    "roomType": "Standard",
+    "pricePerDay": 142000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R083",
+    "roomType": "Deluxe",
+    "pricePerDay": 400000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R084",
+    "roomType": "Deluxe",
+    "pricePerDay": 616000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R085",
+    "roomType": "Deluxe",
+    "pricePerDay": 536000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R086",
+    "roomType": "Standard",
+    "pricePerDay": 130000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R087",
+    "roomType": "VIP",
+    "pricePerDay": 2275000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R088",
+    "roomType": "VIP",
+    "pricePerDay": 2005000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R089",
+    "roomType": "VIP",
+    "pricePerDay": 1630000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R090",
+    "roomType": "Deluxe",
+    "pricePerDay": 664000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R091",
+    "roomType": "Deluxe",
+    "pricePerDay": 424000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R092",
+    "roomType": "VIP",
+    "pricePerDay": 1855000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R093",
+    "roomType": "VIP",
+    "pricePerDay": 1990000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R094",
+    "roomType": "VIP",
+    "pricePerDay": 1735000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R095",
+    "roomType": "Standard",
+    "pricePerDay": 104000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R096",
+    "roomType": "VIP",
+    "pricePerDay": 2365000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R097",
+    "roomType": "VIP",
+    "pricePerDay": 1705000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R098",
+    "roomType": "Deluxe",
+    "pricePerDay": 428000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R099",
+    "roomType": "Standard",
+    "pricePerDay": 274000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R100",
+    "roomType": "VIP",
+    "pricePerDay": 2275000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R101",
+    "roomType": "Standard",
+    "pricePerDay": 134000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R102",
+    "roomType": "Standard",
+    "pricePerDay": 204000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R103",
+    "roomType": "VIP",
+    "pricePerDay": 1315000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R104",
+    "roomType": "Standard",
+    "pricePerDay": 166000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R105",
+    "roomType": "Standard",
+    "pricePerDay": 274000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R106",
+    "roomType": "VIP",
+    "pricePerDay": 1300000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R107",
+    "roomType": "Deluxe",
+    "pricePerDay": 576000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R108",
+    "roomType": "VIP",
+    "pricePerDay": 1000000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R109",
+    "roomType": "Deluxe",
+    "pricePerDay": 588000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R110",
+    "roomType": "Standard",
+    "pricePerDay": 276000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R111",
+    "roomType": "VIP",
+    "pricePerDay": 2215000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R112",
+    "roomType": "Standard",
+    "pricePerDay": 222000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R113",
+    "roomType": "Standard",
+    "pricePerDay": 150000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R114",
+    "roomType": "Standard",
+    "pricePerDay": 246000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R115",
+    "roomType": "VIP",
+    "pricePerDay": 1870000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R116",
+    "roomType": "Standard",
+    "pricePerDay": 200000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R117",
+    "roomType": "Standard",
+    "pricePerDay": 136000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R118",
+    "roomType": "Deluxe",
+    "pricePerDay": 596000.000,
+    "isAvailable": false,
+    "services": [
+    {
+      "serviceName": "AirportPickup",
+      "price": 27000.000,
+      "quantity": 1
+    }
+    ]
+  },
+  {
+    "roomId": "R119",
+    "roomType": "VIP",
+    "pricePerDay": 1735000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R120",
+    "roomType": "Deluxe",
+    "pricePerDay": 596000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R121",
+    "roomType": "Standard",
+    "pricePerDay": 150000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R122",
+    "roomType": "Standard",
+    "pricePerDay": 170000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R123",
+    "roomType": "Standard",
+    "pricePerDay": 290000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R124",
+    "roomType": "Standard",
+    "pricePerDay": 146000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R125",
+    "roomType": "Deluxe",
+    "pricePerDay": 608000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R126",
+    "roomType": "Deluxe",
+    "pricePerDay": 436000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R127",
+    "roomType": "Standard",
+    "pricePerDay": 116000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R128",
+    "roomType": "VIP",
+    "pricePerDay": 1705000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R129",
+    "roomType": "Standard",
+    "pricePerDay": 126000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R130",
+    "roomType": "Standard",
+    "pricePerDay": 252000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R131",
+    "roomType": "Deluxe",
+    "pricePerDay": 456000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R132",
+    "roomType": "Standard",
+    "pricePerDay": 294000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R133",
+    "roomType": "Standard",
+    "pricePerDay": 182000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R134",
+    "roomType": "Deluxe",
+    "pricePerDay": 404000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R135",
+    "roomType": "Standard",
+    "pricePerDay": 134000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R136",
+    "roomType": "Deluxe",
+    "pricePerDay": 508000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R137",
+    "roomType": "VIP",
+    "pricePerDay": 1285000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R138",
+    "roomType": "Deluxe",
+    "pricePerDay": 444000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R139",
+    "roomType": "Deluxe",
+    "pricePerDay": 516000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R140",
+    "roomType": "Deluxe",
+    "pricePerDay": 708000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R141",
+    "roomType": "VIP",
+    "pricePerDay": 2230000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R142",
+    "roomType": "Deluxe",
+    "pricePerDay": 684000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R143",
+    "roomType": "Standard",
+    "pricePerDay": 266000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R144",
+    "roomType": "Deluxe",
+    "pricePerDay": 608000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R145",
+    "roomType": "VIP",
+    "pricePerDay": 1360000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R146",
+    "roomType": "VIP",
+    "pricePerDay": 1570000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R147",
+    "roomType": "Standard",
+    "pricePerDay": 172000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R148",
+    "roomType": "Standard",
+    "pricePerDay": 138000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R149",
+    "roomType": "Standard",
+    "pricePerDay": 106000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R150",
+    "roomType": "VIP",
+    "pricePerDay": 2065000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R151",
+    "roomType": "Standard",
+    "pricePerDay": 114000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R152",
+    "roomType": "VIP",
+    "pricePerDay": 1585000.000,
+    "isAvailable": false,
+    "services": [
+    {
+      "serviceName": "AirportPickup",
+      "price": 27000.000,
+      "quantity": 3
+    }
+    ]
+  },
+  {
+    "roomId": "R153",
+    "roomType": "VIP",
+    "pricePerDay": 1330000.000,
+    "isAvailable": false,
+    "services": [
+    {
+      "serviceName": "AirportPickup",
+      "price": 27000.000,
+      "quantity": 2
+    },
+    {
+      "serviceName": "Laundry",
+      "price": 29500.000,
+      "quantity": 2
+    }
+    ]
+  },
+  {
+    "roomId": "R154",
+    "roomType": "Standard",
+    "pricePerDay": 116000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R155",
+    "roomType": "VIP",
+    "pricePerDay": 1735000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R156",
+    "roomType": "Deluxe",
+    "pricePerDay": 668000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R157",
+    "roomType": "Standard",
+    "pricePerDay": 170000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R158",
+    "roomType": "VIP",
+    "pricePerDay": 1690000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R159",
+    "roomType": "VIP",
+    "pricePerDay": 1045000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R160",
+    "roomType": "Deluxe",
+    "pricePerDay": 488000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R161",
+    "roomType": "Deluxe",
+    "pricePerDay": 520000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R162",
+    "roomType": "VIP",
+    "pricePerDay": 2440000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R163",
+    "roomType": "Standard",
+    "pricePerDay": 278000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R164",
+    "roomType": "Deluxe",
+    "pricePerDay": 696000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R165",
+    "roomType": "Deluxe",
+    "pricePerDay": 680000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R166",
+    "roomType": "VIP",
+    "pricePerDay": 2290000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R167",
+    "roomType": "Deluxe",
+    "pricePerDay": 736000.000,
+    "isAvailable": false,
+    "services": [
+    {
+      "serviceName": "ExtraBed",
+      "price": 32400.000,
+      "quantity": 2
+    },
+    {
+      "serviceName": "AirportPickup",
+      "price": 27000.000,
+      "quantity": 2
+    }
+    ]
+  },
+  {
+    "roomId": "R168",
+    "roomType": "VIP",
+    "pricePerDay": 1270000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R169",
+    "roomType": "VIP",
+    "pricePerDay": 2245000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R170",
+    "roomType": "VIP",
+    "pricePerDay": 1510000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R171",
+    "roomType": "Standard",
+    "pricePerDay": 118000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R172",
+    "roomType": "Deluxe",
+    "pricePerDay": 796000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R173",
+    "roomType": "Deluxe",
+    "pricePerDay": 504000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R174",
+    "roomType": "Standard",
+    "pricePerDay": 232000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R175",
+    "roomType": "Standard",
+    "pricePerDay": 180000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R176",
+    "roomType": "Deluxe",
+    "pricePerDay": 476000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R177",
+    "roomType": "VIP",
+    "pricePerDay": 1690000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R178",
+    "roomType": "VIP",
+    "pricePerDay": 1405000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R179",
+    "roomType": "Standard",
+    "pricePerDay": 194000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R180",
+    "roomType": "VIP",
+    "pricePerDay": 2185000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R181",
+    "roomType": "Standard",
+    "pricePerDay": 108000.000,
+    "isAvailable": false,
+    "services": [
+    {
+      "serviceName": "AirportPickup",
+      "price": 27000.000,
+      "quantity": 2
+    },
+    {
+      "serviceName": "Breakfast",
+      "price": 30800.000,
+      "quantity": 1
+    }
+    ]
+  },
+  {
+    "roomId": "R182",
+    "roomType": "Standard",
+    "pricePerDay": 172000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R183",
+    "roomType": "Deluxe",
+    "pricePerDay": 736000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R184",
+    "roomType": "Standard",
+    "pricePerDay": 210000.000,
+    "isAvailable": false,
+    "services": [
+    {
+      "serviceName": "Laundry",
+      "price": 29500.000,
+      "quantity": 2
+    }
+    ]
+  },
+  {
+    "roomId": "R185",
+    "roomType": "Standard",
+    "pricePerDay": 178000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R186",
+    "roomType": "Standard",
+    "pricePerDay": 244000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R187",
+    "roomType": "VIP",
+    "pricePerDay": 1435000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R188",
+    "roomType": "VIP",
+    "pricePerDay": 1465000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R189",
+    "roomType": "Deluxe",
+    "pricePerDay": 548000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R190",
+    "roomType": "VIP",
+    "pricePerDay": 1210000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R191",
+    "roomType": "Standard",
+    "pricePerDay": 140000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R192",
+    "roomType": "Deluxe",
+    "pricePerDay": 520000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R193",
+    "roomType": "VIP",
+    "pricePerDay": 1990000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R194",
+    "roomType": "Standard",
+    "pricePerDay": 182000.000,
+    "isAvailable": false,
+    "services": [
+    {
+      "serviceName": "Laundry",
+      "price": 29500.000,
+      "quantity": 1
+    },
+    {
+      "serviceName": "AirportPickup",
+      "price": 27000.000,
+      "quantity": 1
+    }
+    ]
+  },
+  {
+    "roomId": "R195",
+    "roomType": "Standard",
+    "pricePerDay": 136000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R196",
+    "roomType": "VIP",
+    "pricePerDay": 1585000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R197",
+    "roomType": "Standard",
+    "pricePerDay": 176000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R198",
+    "roomType": "VIP",
+    "pricePerDay": 1960000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R199",
+    "roomType": "Deluxe",
+    "pricePerDay": 752000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R200",
+    "roomType": "VIP",
+    "pricePerDay": 1675000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R201",
+    "roomType": "Deluxe",
+    "pricePerDay": 660000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R202",
+    "roomType": "Standard",
+    "pricePerDay": 292000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R203",
+    "roomType": "VIP",
+    "pricePerDay": 1825000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R204",
+    "roomType": "VIP",
+    "pricePerDay": 2395000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R205",
+    "roomType": "Deluxe",
+    "pricePerDay": 716000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R206",
+    "roomType": "Standard",
+    "pricePerDay": 206000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R207",
+    "roomType": "Standard",
+    "pricePerDay": 232000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R208",
+    "roomType": "Deluxe",
+    "pricePerDay": 560000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R209",
+    "roomType": "VIP",
+    "pricePerDay": 1855000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R210",
+    "roomType": "Deluxe",
+    "pricePerDay": 796000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R211",
+    "roomType": "VIP",
+    "pricePerDay": 1435000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R212",
+    "roomType": "Deluxe",
+    "pricePerDay": 612000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R213",
+    "roomType": "Standard",
+    "pricePerDay": 292000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R214",
+    "roomType": "Deluxe",
+    "pricePerDay": 408000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R215",
+    "roomType": "VIP",
+    "pricePerDay": 1675000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R216",
+    "roomType": "VIP",
+    "pricePerDay": 1255000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R217",
+    "roomType": "Standard",
+    "pricePerDay": 214000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R218",
+    "roomType": "VIP",
+    "pricePerDay": 1330000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R219",
+    "roomType": "Deluxe",
+    "pricePerDay": 756000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R220",
+    "roomType": "VIP",
+    "pricePerDay": 1735000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R221",
+    "roomType": "Deluxe",
+    "pricePerDay": 604000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R222",
+    "roomType": "Deluxe",
+    "pricePerDay": 516000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R223",
+    "roomType": "Standard",
+    "pricePerDay": 160000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R224",
+    "roomType": "VIP",
+    "pricePerDay": 2035000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R225",
+    "roomType": "Deluxe",
+    "pricePerDay": 528000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R226",
+    "roomType": "Standard",
+    "pricePerDay": 150000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R227",
+    "roomType": "Standard",
+    "pricePerDay": 236000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R228",
+    "roomType": "Deluxe",
+    "pricePerDay": 616000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R229",
+    "roomType": "Standard",
+    "pricePerDay": 296000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R230",
+    "roomType": "Standard",
+    "pricePerDay": 104000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R231",
+    "roomType": "Deluxe",
+    "pricePerDay": 472000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R232",
+    "roomType": "VIP",
+    "pricePerDay": 1405000.000,
+    "isAvailable": false,
+    "services": [
+    {
+      "serviceName": "Breakfast",
+      "price": 30800.000,
+      "quantity": 1
+    },
+    {
+      "serviceName": "Spa",
+      "price": 31400.000,
+      "quantity": 1
+    }
+    ]
+  },
+  {
+    "roomId": "R233",
+    "roomType": "Standard",
+    "pricePerDay": 262000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R234",
+    "roomType": "Deluxe",
+    "pricePerDay": 700000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R235",
+    "roomType": "Deluxe",
+    "pricePerDay": 640000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R236",
+    "roomType": "Deluxe",
+    "pricePerDay": 768000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R237",
+    "roomType": "Deluxe",
+    "pricePerDay": 660000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R238",
+    "roomType": "VIP",
+    "pricePerDay": 1090000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R239",
+    "roomType": "Deluxe",
+    "pricePerDay": 544000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R240",
+    "roomType": "Standard",
+    "pricePerDay": 272000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R241",
+    "roomType": "Deluxe",
+    "pricePerDay": 416000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R242",
+    "roomType": "VIP",
+    "pricePerDay": 1960000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R243",
+    "roomType": "Standard",
+    "pricePerDay": 190000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R244",
+    "roomType": "VIP",
+    "pricePerDay": 1570000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R245",
+    "roomType": "Deluxe",
+    "pricePerDay": 696000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R246",
+    "roomType": "Standard",
+    "pricePerDay": 246000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R247",
+    "roomType": "Deluxe",
+    "pricePerDay": 592000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R248",
+    "roomType": "Deluxe",
+    "pricePerDay": 648000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R249",
+    "roomType": "Deluxe",
+    "pricePerDay": 504000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R250",
+    "roomType": "VIP",
+    "pricePerDay": 2125000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R251",
+    "roomType": "VIP",
+    "pricePerDay": 1930000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R252",
+    "roomType": "Deluxe",
+    "pricePerDay": 460000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R253",
+    "roomType": "VIP",
+    "pricePerDay": 1255000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R254",
+    "roomType": "VIP",
+    "pricePerDay": 1660000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R255",
+    "roomType": "VIP",
+    "pricePerDay": 1450000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R256",
+    "roomType": "VIP",
+    "pricePerDay": 2215000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R257",
+    "roomType": "Deluxe",
+    "pricePerDay": 636000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R258",
+    "roomType": "VIP",
+    "pricePerDay": 1435000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R259",
+    "roomType": "Standard",
+    "pricePerDay": 178000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R260",
+    "roomType": "Deluxe",
+    "pricePerDay": 524000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R261",
+    "roomType": "Standard",
+    "pricePerDay": 278000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R262",
+    "roomType": "Standard",
+    "pricePerDay": 110000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R263",
+    "roomType": "Deluxe",
+    "pricePerDay": 628000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R264",
+    "roomType": "Deluxe",
+    "pricePerDay": 560000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R265",
+    "roomType": "VIP",
+    "pricePerDay": 2290000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R266",
+    "roomType": "Deluxe",
+    "pricePerDay": 756000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R267",
+    "roomType": "VIP",
+    "pricePerDay": 1330000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R268",
+    "roomType": "Standard",
+    "pricePerDay": 218000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R269",
+    "roomType": "Deluxe",
+    "pricePerDay": 676000.000,
+    "isAvailable": false,
+    "services": [
+    {
+      "serviceName": "Spa",
+      "price": 31400.000,
+      "quantity": 1
+    }
+    ]
+  },
+  {
+    "roomId": "R270",
+    "roomType": "VIP",
+    "pricePerDay": 1135000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R271",
+    "roomType": "VIP",
+    "pricePerDay": 1930000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R272",
+    "roomType": "Deluxe",
+    "pricePerDay": 548000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R273",
+    "roomType": "VIP",
+    "pricePerDay": 2260000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R274",
+    "roomType": "Deluxe",
+    "pricePerDay": 428000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R275",
+    "roomType": "VIP",
+    "pricePerDay": 1240000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R276",
+    "roomType": "Deluxe",
+    "pricePerDay": 424000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R277",
+    "roomType": "Standard",
+    "pricePerDay": 222000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R278",
+    "roomType": "VIP",
+    "pricePerDay": 2065000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R279",
+    "roomType": "Deluxe",
+    "pricePerDay": 548000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R280",
+    "roomType": "Deluxe",
+    "pricePerDay": 400000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R281",
+    "roomType": "Standard",
+    "pricePerDay": 274000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R282",
+    "roomType": "VIP",
+    "pricePerDay": 1675000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R283",
+    "roomType": "Standard",
+    "pricePerDay": 184000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R284",
+    "roomType": "Deluxe",
+    "pricePerDay": 472000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R285",
+    "roomType": "Standard",
+    "pricePerDay": 120000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R286",
+    "roomType": "Deluxe",
+    "pricePerDay": 424000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R287",
+    "roomType": "Standard",
+    "pricePerDay": 234000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R288",
+    "roomType": "Standard",
+    "pricePerDay": 224000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R289",
+    "roomType": "Standard",
+    "pricePerDay": 100000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R290",
+    "roomType": "VIP",
+    "pricePerDay": 2020000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R291",
+    "roomType": "Deluxe",
+    "pricePerDay": 660000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R292",
+    "roomType": "VIP",
+    "pricePerDay": 1585000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R293",
+    "roomType": "Deluxe",
+    "pricePerDay": 428000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R294",
+    "roomType": "VIP",
+    "pricePerDay": 1420000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R295",
+    "roomType": "Deluxe",
+    "pricePerDay": 432000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R296",
+    "roomType": "VIP",
+    "pricePerDay": 2110000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R297",
+    "roomType": "Deluxe",
+    "pricePerDay": 424000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R298",
+    "roomType": "Deluxe",
+    "pricePerDay": 584000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R299",
+    "roomType": "VIP",
+    "pricePerDay": 1375000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R300",
+    "roomType": "Deluxe",
+    "pricePerDay": 564000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R301",
+    "roomType": "VIP",
+    "pricePerDay": 1255000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R302",
+    "roomType": "VIP",
+    "pricePerDay": 1300000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R303",
+    "roomType": "Standard",
+    "pricePerDay": 156000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R304",
+    "roomType": "Standard",
+    "pricePerDay": 222000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R305",
+    "roomType": "Deluxe",
+    "pricePerDay": 452000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R306",
+    "roomType": "Standard",
+    "pricePerDay": 186000.000,
+    "isAvailable": false,
+    "services": [
+    {
+      "serviceName": "Spa",
+      "price": 31400.000,
+      "quantity": 2
+    },
+    {
+      "serviceName": "ExtraBed",
+      "price": 32400.000,
+      "quantity": 2
+    }
+    ]
+  },
+  {
+    "roomId": "R307",
+    "roomType": "Deluxe",
+    "pricePerDay": 596000.000,
+    "isAvailable": false,
+    "services": [
+    {
+      "serviceName": "ExtraBed",
+      "price": 32400.000,
+      "quantity": 2
+    }
+    ]
+  },
+  {
+    "roomId": "R308",
+    "roomType": "Deluxe",
+    "pricePerDay": 496000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R309",
+    "roomType": "Standard",
+    "pricePerDay": 176000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R310",
+    "roomType": "VIP",
+    "pricePerDay": 1015000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R311",
+    "roomType": "VIP",
+    "pricePerDay": 1075000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R312",
+    "roomType": "Standard",
+    "pricePerDay": 284000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R313",
+    "roomType": "VIP",
+    "pricePerDay": 1780000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R314",
+    "roomType": "Deluxe",
+    "pricePerDay": 412000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R315",
+    "roomType": "VIP",
+    "pricePerDay": 1285000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R316",
+    "roomType": "Deluxe",
+    "pricePerDay": 672000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R317",
+    "roomType": "Standard",
+    "pricePerDay": 254000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R318",
+    "roomType": "Deluxe",
+    "pricePerDay": 768000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R319",
+    "roomType": "VIP",
+    "pricePerDay": 1990000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R320",
+    "roomType": "Standard",
+    "pricePerDay": 182000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R321",
+    "roomType": "Standard",
+    "pricePerDay": 148000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R322",
+    "roomType": "VIP",
+    "pricePerDay": 2350000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R323",
+    "roomType": "Standard",
+    "pricePerDay": 274000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R324",
+    "roomType": "Deluxe",
+    "pricePerDay": 748000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R325",
+    "roomType": "Standard",
+    "pricePerDay": 288000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R326",
+    "roomType": "VIP",
+    "pricePerDay": 1765000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R327",
+    "roomType": "Standard",
+    "pricePerDay": 124000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R328",
+    "roomType": "Standard",
+    "pricePerDay": 250000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R329",
+    "roomType": "VIP",
+    "pricePerDay": 1045000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R330",
+    "roomType": "Deluxe",
+    "pricePerDay": 760000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R331",
+    "roomType": "Deluxe",
+    "pricePerDay": 404000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R332",
+    "roomType": "Standard",
+    "pricePerDay": 178000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R333",
+    "roomType": "Deluxe",
+    "pricePerDay": 768000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R334",
+    "roomType": "VIP",
+    "pricePerDay": 2185000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R335",
+    "roomType": "Deluxe",
+    "pricePerDay": 460000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R336",
+    "roomType": "Standard",
+    "pricePerDay": 176000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R337",
+    "roomType": "Deluxe",
+    "pricePerDay": 672000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R338",
+    "roomType": "Deluxe",
+    "pricePerDay": 640000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R339",
+    "roomType": "VIP",
+    "pricePerDay": 1510000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R340",
+    "roomType": "Standard",
+    "pricePerDay": 116000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R341",
+    "roomType": "VIP",
+    "pricePerDay": 1375000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R342",
+    "roomType": "Standard",
+    "pricePerDay": 106000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R343",
+    "roomType": "VIP",
+    "pricePerDay": 1975000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R344",
+    "roomType": "Deluxe",
+    "pricePerDay": 516000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R345",
+    "roomType": "Deluxe",
+    "pricePerDay": 732000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R346",
+    "roomType": "VIP",
+    "pricePerDay": 2305000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R347",
+    "roomType": "Standard",
+    "pricePerDay": 282000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R348",
+    "roomType": "VIP",
+    "pricePerDay": 1705000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R349",
+    "roomType": "VIP",
+    "pricePerDay": 2275000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R350",
+    "roomType": "VIP",
+    "pricePerDay": 1495000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R351",
+    "roomType": "Standard",
+    "pricePerDay": 170000.000,
+    "isAvailable": false,
+    "services": [
+    {
+      "serviceName": "Laundry",
+      "price": 29500.000,
+      "quantity": 1
+    },
+    {
+      "serviceName": "ExtraBed",
+      "price": 32400.000,
+      "quantity": 2
+    }
+    ]
+  },
+  {
+    "roomId": "R352",
+    "roomType": "Standard",
+    "pricePerDay": 132000.000,
+    "isAvailable": false,
+    "services": [
+    {
+      "serviceName": "ExtraBed",
+      "price": 32400.000,
+      "quantity": 2
+    }
+    ]
+  },
+  {
+    "roomId": "R353",
+    "roomType": "Deluxe",
+    "pricePerDay": 648000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R354",
+    "roomType": "Standard",
+    "pricePerDay": 154000.000,
+    "isAvailable": false,
+    "services": [
+    {
+      "serviceName": "AirportPickup",
+      "price": 27000.000,
+      "quantity": 2
+    }
+    ]
+  },
+  {
+    "roomId": "R355",
+    "roomType": "Standard",
+    "pricePerDay": 180000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R356",
+    "roomType": "Deluxe",
+    "pricePerDay": 592000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R357",
+    "roomType": "VIP",
+    "pricePerDay": 2215000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R358",
+    "roomType": "Deluxe",
+    "pricePerDay": 764000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R359",
+    "roomType": "VIP",
+    "pricePerDay": 1915000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R360",
+    "roomType": "Standard",
+    "pricePerDay": 258000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R361",
+    "roomType": "Deluxe",
+    "pricePerDay": 784000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R362",
+    "roomType": "Deluxe",
+    "pricePerDay": 528000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R363",
+    "roomType": "VIP",
+    "pricePerDay": 1330000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R364",
+    "roomType": "Standard",
+    "pricePerDay": 288000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R365",
+    "roomType": "Standard",
+    "pricePerDay": 176000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R366",
+    "roomType": "VIP",
+    "pricePerDay": 1345000.000,
+    "isAvailable": false,
+    "services": [
+    {
+      "serviceName": "Breakfast",
+      "price": 30800.000,
+      "quantity": 2
+    }
+    ]
+  },
+  {
+    "roomId": "R367",
+    "roomType": "Deluxe",
+    "pricePerDay": 464000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R368",
+    "roomType": "Deluxe",
+    "pricePerDay": 632000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R369",
+    "roomType": "VIP",
+    "pricePerDay": 2320000.000,
+    "isAvailable": false,
+    "services": [
+    {
+      "serviceName": "Laundry",
+      "price": 29500.000,
+      "quantity": 2
+    }
+    ]
+  },
+  {
+    "roomId": "R370",
+    "roomType": "Standard",
+    "pricePerDay": 272000.000,
+    "isAvailable": false,
+    "services": [
+    {
+      "serviceName": "ExtraBed",
+      "price": 32400.000,
+      "quantity": 1
+    }
+    ]
+  },
+  {
+    "roomId": "R371",
+    "roomType": "Deluxe",
+    "pricePerDay": 456000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R372",
+    "roomType": "VIP",
+    "pricePerDay": 2125000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R373",
+    "roomType": "Standard",
+    "pricePerDay": 234000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R374",
+    "roomType": "Deluxe",
+    "pricePerDay": 532000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R375",
+    "roomType": "VIP",
+    "pricePerDay": 1900000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R376",
+    "roomType": "VIP",
+    "pricePerDay": 1165000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R377",
+    "roomType": "Standard",
+    "pricePerDay": 102000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R378",
+    "roomType": "VIP",
+    "pricePerDay": 1465000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R379",
+    "roomType": "Standard",
+    "pricePerDay": 184000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R380",
+    "roomType": "Deluxe",
+    "pricePerDay": 748000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R381",
+    "roomType": "Standard",
+    "pricePerDay": 230000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R382",
+    "roomType": "Deluxe",
+    "pricePerDay": 484000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R383",
+    "roomType": "Standard",
+    "pricePerDay": 184000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R384",
+    "roomType": "VIP",
+    "pricePerDay": 1105000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R385",
+    "roomType": "Standard",
+    "pricePerDay": 196000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R386",
+    "roomType": "Standard",
+    "pricePerDay": 118000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R387",
+    "roomType": "Deluxe",
+    "pricePerDay": 624000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R388",
+    "roomType": "VIP",
+    "pricePerDay": 1975000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R389",
+    "roomType": "Deluxe",
+    "pricePerDay": 420000.000,
+    "isAvailable": false,
+    "services": [
+    {
+      "serviceName": "Spa",
+      "price": 31400.000,
+      "quantity": 1
+    },
+    {
+      "serviceName": "AirportPickup",
+      "price": 27000.000,
+      "quantity": 2
+    }
+    ]
+  },
+  {
+    "roomId": "R390",
+    "roomType": "Standard",
+    "pricePerDay": 128000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R391",
+    "roomType": "VIP",
+    "pricePerDay": 2365000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R392",
+    "roomType": "VIP",
+    "pricePerDay": 1270000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R393",
+    "roomType": "VIP",
+    "pricePerDay": 1900000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R394",
+    "roomType": "VIP",
+    "pricePerDay": 1180000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R395",
+    "roomType": "Standard",
+    "pricePerDay": 206000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R396",
+    "roomType": "Deluxe",
+    "pricePerDay": 700000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R397",
+    "roomType": "Standard",
+    "pricePerDay": 136000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R398",
+    "roomType": "Standard",
+    "pricePerDay": 206000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R399",
+    "roomType": "Deluxe",
+    "pricePerDay": 484000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R400",
+    "roomType": "VIP",
+    "pricePerDay": 2260000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R401",
+    "roomType": "Standard",
+    "pricePerDay": 176000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R402",
+    "roomType": "VIP",
+    "pricePerDay": 2230000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R403",
+    "roomType": "Standard",
+    "pricePerDay": 128000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R404",
+    "roomType": "Deluxe",
+    "pricePerDay": 688000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R405",
+    "roomType": "Deluxe",
+    "pricePerDay": 708000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R406",
+    "roomType": "VIP",
+    "pricePerDay": 2485000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R407",
+    "roomType": "Deluxe",
+    "pricePerDay": 436000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R408",
+    "roomType": "VIP",
+    "pricePerDay": 1810000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R409",
+    "roomType": "VIP",
+    "pricePerDay": 1660000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R410",
+    "roomType": "Deluxe",
+    "pricePerDay": 432000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R411",
+    "roomType": "VIP",
+    "pricePerDay": 1675000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R412",
+    "roomType": "Standard",
+    "pricePerDay": 270000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R413",
+    "roomType": "Deluxe",
+    "pricePerDay": 480000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R414",
+    "roomType": "Deluxe",
+    "pricePerDay": 660000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R415",
+    "roomType": "Standard",
+    "pricePerDay": 154000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R416",
+    "roomType": "Standard",
+    "pricePerDay": 230000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R417",
+    "roomType": "VIP",
+    "pricePerDay": 1390000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R418",
+    "roomType": "Deluxe",
+    "pricePerDay": 736000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R419",
+    "roomType": "VIP",
+    "pricePerDay": 1945000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R420",
+    "roomType": "Deluxe",
+    "pricePerDay": 668000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R421",
+    "roomType": "Deluxe",
+    "pricePerDay": 552000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R422",
+    "roomType": "Deluxe",
+    "pricePerDay": 644000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R423",
+    "roomType": "VIP",
+    "pricePerDay": 1720000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R424",
+    "roomType": "Standard",
+    "pricePerDay": 266000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R425",
+    "roomType": "Deluxe",
+    "pricePerDay": 588000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R426",
+    "roomType": "Standard",
+    "pricePerDay": 146000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R427",
+    "roomType": "Deluxe",
+    "pricePerDay": 704000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R428",
+    "roomType": "VIP",
+    "pricePerDay": 2365000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R429",
+    "roomType": "Standard",
+    "pricePerDay": 136000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R430",
+    "roomType": "Deluxe",
+    "pricePerDay": 780000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R431",
+    "roomType": "VIP",
+    "pricePerDay": 1945000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R432",
+    "roomType": "VIP",
+    "pricePerDay": 1225000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R433",
+    "roomType": "VIP",
+    "pricePerDay": 1360000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R434",
+    "roomType": "VIP",
+    "pricePerDay": 2425000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R435",
+    "roomType": "Standard",
+    "pricePerDay": 240000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R436",
+    "roomType": "Standard",
+    "pricePerDay": 220000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R437",
+    "roomType": "Deluxe",
+    "pricePerDay": 728000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R438",
+    "roomType": "VIP",
+    "pricePerDay": 1030000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R439",
+    "roomType": "VIP",
+    "pricePerDay": 1585000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R440",
+    "roomType": "Standard",
+    "pricePerDay": 194000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R441",
+    "roomType": "VIP",
+    "pricePerDay": 2080000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R442",
+    "roomType": "Deluxe",
+    "pricePerDay": 632000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R443",
+    "roomType": "Deluxe",
+    "pricePerDay": 544000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R444",
+    "roomType": "Deluxe",
+    "pricePerDay": 720000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R445",
+    "roomType": "Standard",
+    "pricePerDay": 274000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R446",
+    "roomType": "Standard",
+    "pricePerDay": 286000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R447",
+    "roomType": "Deluxe",
+    "pricePerDay": 404000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R448",
+    "roomType": "Standard",
+    "pricePerDay": 176000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R449",
+    "roomType": "Deluxe",
+    "pricePerDay": 476000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R450",
+    "roomType": "VIP",
+    "pricePerDay": 1945000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R451",
+    "roomType": "Deluxe",
+    "pricePerDay": 604000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R452",
+    "roomType": "Standard",
+    "pricePerDay": 124000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R453",
+    "roomType": "Standard",
+    "pricePerDay": 150000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R454",
+    "roomType": "Standard",
+    "pricePerDay": 244000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R455",
+    "roomType": "Standard",
+    "pricePerDay": 226000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R456",
+    "roomType": "Standard",
+    "pricePerDay": 266000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R457",
+    "roomType": "Standard",
+    "pricePerDay": 198000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R458",
+    "roomType": "Deluxe",
+    "pricePerDay": 548000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R459",
+    "roomType": "Standard",
+    "pricePerDay": 252000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R460",
+    "roomType": "Standard",
+    "pricePerDay": 288000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R461",
+    "roomType": "Deluxe",
+    "pricePerDay": 728000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R462",
+    "roomType": "Deluxe",
+    "pricePerDay": 740000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R463",
+    "roomType": "VIP",
+    "pricePerDay": 1435000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R464",
+    "roomType": "Standard",
+    "pricePerDay": 290000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R465",
+    "roomType": "VIP",
+    "pricePerDay": 1345000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R466",
+    "roomType": "Standard",
+    "pricePerDay": 272000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R467",
+    "roomType": "VIP",
+    "pricePerDay": 2170000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R468",
+    "roomType": "Deluxe",
+    "pricePerDay": 500000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R469",
+    "roomType": "Deluxe",
+    "pricePerDay": 752000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R470",
+    "roomType": "Deluxe",
+    "pricePerDay": 732000.000,
+    "isAvailable": false,
+    "services": [
+    {
+      "serviceName": "AirportPickup",
+      "price": 27000.000,
+      "quantity": 1
+    },
+    {
+      "serviceName": "Breakfast",
+      "price": 30800.000,
+      "quantity": 1
+    }
+    ]
+  },
+  {
+    "roomId": "R471",
+    "roomType": "Deluxe",
+    "pricePerDay": 412000.000,
+    "isAvailable": false,
+    "services": [
+    {
+      "serviceName": "Breakfast",
+      "price": 30800.000,
+      "quantity": 2
+    }
+    ]
+  },
+  {
+    "roomId": "R472",
+    "roomType": "VIP",
+    "pricePerDay": 2230000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R473",
+    "roomType": "Standard",
+    "pricePerDay": 214000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R474",
+    "roomType": "Standard",
+    "pricePerDay": 114000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R475",
+    "roomType": "VIP",
+    "pricePerDay": 1420000.000,
+    "isAvailable": false,
+    "services": [
+    {
+      "serviceName": "Laundry",
+      "price": 29500.000,
+      "quantity": 2
+    },
+    {
+      "serviceName": "Spa",
+      "price": 31400.000,
+      "quantity": 2
+    }
+    ]
+  },
+  {
+    "roomId": "R476",
+    "roomType": "Standard",
+    "pricePerDay": 240000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R477",
+    "roomType": "Standard",
+    "pricePerDay": 262000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R478",
+    "roomType": "Deluxe",
+    "pricePerDay": 616000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R479",
+    "roomType": "VIP",
+    "pricePerDay": 1780000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R480",
+    "roomType": "Standard",
+    "pricePerDay": 274000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R481",
+    "roomType": "Deluxe",
+    "pricePerDay": 472000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R482",
+    "roomType": "Deluxe",
+    "pricePerDay": 492000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R483",
+    "roomType": "VIP",
+    "pricePerDay": 2170000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R484",
+    "roomType": "VIP",
+    "pricePerDay": 1375000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R485",
+    "roomType": "VIP",
+    "pricePerDay": 1840000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R486",
+    "roomType": "Deluxe",
+    "pricePerDay": 608000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R487",
+    "roomType": "VIP",
+    "pricePerDay": 1300000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R488",
+    "roomType": "Deluxe",
+    "pricePerDay": 432000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R489",
+    "roomType": "Deluxe",
+    "pricePerDay": 424000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R490",
+    "roomType": "VIP",
+    "pricePerDay": 1570000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R491",
+    "roomType": "Deluxe",
+    "pricePerDay": 732000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R492",
+    "roomType": "Standard",
+    "pricePerDay": 212000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R493",
+    "roomType": "VIP",
+    "pricePerDay": 1600000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R494",
+    "roomType": "VIP",
+    "pricePerDay": 2005000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R495",
+    "roomType": "VIP",
+    "pricePerDay": 2305000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R496",
+    "roomType": "Deluxe",
+    "pricePerDay": 436000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R497",
+    "roomType": "Standard",
+    "pricePerDay": 182000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R498",
+    "roomType": "VIP",
+    "pricePerDay": 1345000.000,
+    "isAvailable": false,
+    "services": []
+  },
+  {
+    "roomId": "R499",
+    "roomType": "VIP",
+    "pricePerDay": 1720000.000,
+    "isAvailable": true,
+    "services": []
+  },
+  {
+    "roomId": "R500",
+    "roomType": "Standard",
+    "pricePerDay": 182000.000,
+    "isAvailable": false,
+    "services": [
+    {
+      "serviceName": "Spa",
+      "price": 31400.000,
+      "quantity": 2
+    }
+    ]
+  }
+]
