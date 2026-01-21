@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AdvancedFeaturesWidget - Hotel Management</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .result-scroll::-webkit-scrollbar {
+            width: 8px;
+        }
+        .result-scroll::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .result-scroll::-webkit-scrollbar-thumb {
+            background-color: #cbd5e1;
+            border-radius: 20px;
+        }
+        .dark .result-scroll::-webkit-scrollbar-thumb {
+            background-color: #374151;
+        }
+        .custom-table th {
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased h-screen overflow-hidden flex flex-col">
+<div id="sidebar-container"></div>
+<main class="w-full max-w-[1280px] h-full mx-auto px-6 py-4 flex flex-col gap-4">
+<header class="flex flex-col gap-1 flex-shrink-0">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-4xl">manage_history</span>
+<div class="flex flex-col">
+<h1 class="text-black dark:text-white text-2xl font-black leading-tight tracking-tight uppercase">
+                        CHỨC NĂNG NÂNG CAO
+                    </h1>
+<p class="text-slate-500 dark:text-slate-400 text-base font-normal leading-tight">
+                        Khám phá các tính năng tìm kiếm và tối ưu hóa phòng khách sạn.
+                    </p>
+</div>
+</div>
+</header>
+<div id="alertBanner" class="hidden w-full bg-emerald-100 dark:bg-emerald-900/30 border border-emerald-200 dark:border-emerald-800 rounded-lg flex justify-center items-center h-[40px] px-4 shadow-sm flex-shrink-0">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-700 dark:text-emerald-400 text-[20px]">check_circle</span>
+<span class="text-emerald-800 dark:text-emerald-300 text-sm font-bold"><span id="alertTitle">Thành công</span>: <span id="alertMessage"></span></span>
+</div>
+</div>
+<section class="grid grid-cols-2 gap-4 w-full h-[140px] flex-shrink-0">
+<button id="findCombinationBtn" class="group relative flex flex-col items-center justify-center p-4 h-full bg-white dark:bg-slate-800 rounded-xl border-2 border-slate-200 dark:border-slate-700 hover:border-primary dark:hover:border-primary hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 cursor-pointer overflow-hidden">
+<div class="absolute inset-0 bg-primary/5 dark:bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="z-10 flex flex-row items-center gap-4">
+<div class="p-3 bg-blue-100 dark:bg-blue-900/50 rounded-full text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">grid_view</span>
+</div>
+<div class="text-left">
+<span class="block text-slate-900 dark:text-white text-lg font-bold">Tìm tổ hợp phòng</span>
+<span class="block text-slate-500 dark:text-slate-400 text-sm font-medium mt-0.5">(Backtracking)</span>
+</div>
+</div>
+</button>
+<div class="relative flex flex-col items-center justify-center p-4 h-full bg-slate-50 dark:bg-slate-900/50 rounded-xl border-2 border-slate-100 dark:border-slate-800 cursor-not-allowed opacity-75">
+<div class="absolute top-2 right-2 bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-400 text-[10px] font-bold px-2 py-1 rounded border border-amber-200 dark:border-amber-700">
+                    Đang phát triển
+                </div>
+<div class="z-10 flex flex-row items-center gap-4 grayscale">
+<div class="p-3 bg-slate-200 dark:bg-slate-800 rounded-full text-slate-400">
+<span class="material-symbols-outlined text-3xl">price_check</span>
+</div>
+<div class="text-left">
+<span class="block text-slate-500 dark:text-slate-400 text-lg font-bold">Tối ưu chi phí thuê phòng</span>
+<span class="block text-slate-400 dark:text-slate-500 text-sm font-medium mt-0.5">(Dynamic Programming)</span>
+</div>
+</div>
+</div>
+</section>
+<section class="flex flex-col flex-grow min-h-0 gap-3">
+<div class="flex items-center justify-between border-b border-slate-200 dark:border-slate-700 pb-2 flex-shrink-0">
+<h2 class="text-slate-900 dark:text-white text-xl font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl">table_view</span>
+                    Kết quả xử lý
+                </h2>
+<div class="hidden sm:flex items-center gap-2 px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-full border border-slate-200 dark:border-slate-700">
+<div class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
+<span class="text-xs font-medium text-slate-600 dark:text-slate-300">System Ready</span>
+</div>
+</div>
+<div class="flex flex-col flex-grow bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-200 dark:border-slate-700 overflow-hidden min-h-0">
+<div class="overflow-auto flex-grow result-scroll h-full" id="resultContainer">
+<div id="emptyState" class="h-full flex items-center justify-center text-slate-400 dark:text-slate-500 text-sm font-medium">
+                    Chưa có kết quả. Hãy chạy tìm tổ hợp phòng.
+                </div>
+<table class="w-full custom-table text-left border-collapse hidden" id="resultTable">
+<thead class="sticky top-0 z-10 bg-slate-50 dark:bg-slate-900 text-slate-500 dark:text-slate-400 border-b border-slate-200 dark:border-slate-700 shadow-sm">
+<tr>
+<th class="p-4 w-1/4">Mã phòng</th>
+<th class="p-4 w-1/3">Loại phòng</th>
+<th class="p-4 text-right">Giá/ngày</th>
+</tr>
+</thead>
+<tbody id="resultBody" class="divide-y divide-slate-100 dark:divide-slate-700/50 text-sm font-medium text-slate-700 dark:text-slate-300"></tbody>
+</table>
+</div>
+<div class="px-5 py-4 bg-slate-50 dark:bg-slate-900/30 border-t border-slate-200 dark:border-slate-700 flex flex-row items-center justify-between gap-4 shrink-0">
+<div class="flex flex-col">
+<span class="text-slate-500 dark:text-slate-400 text-sm font-medium">Tổng giá các phòng:</span>
+<div id="totalPrice" class="text-3xl font-black text-primary dark:text-primary tracking-tight font-mono leading-none mt-1">
+                            --
+                        </div>
+</div>
+<div class="flex items-center gap-2 text-slate-600 dark:text-slate-300 bg-white dark:bg-slate-800 px-4 py-2 rounded-lg border border-slate-200 dark:border-slate-600 shadow-sm">
+<span class="material-symbols-outlined text-[20px] text-primary animate-spin" style="animation-duration: 3s;">hourglass_empty</span>
+<span class="text-sm font-semibold">Thời gian:</span>
+<span id="executionTime" class="text-base font-bold font-mono text-slate-900 dark:text-white">--</span>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-800 px-5 py-3 rounded-lg border border-slate-200 dark:border-slate-700 flex items-center justify-end gap-3 shrink-0 shadow-sm">
+<button id="printBtn" class="px-4 py-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary hover:bg-slate-100 dark:hover:bg-slate-700 rounded-lg transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">print</span>
+                    In kết quả
+                </button>
+<button id="copyBtn" class="px-4 py-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary hover:bg-slate-100 dark:hover:bg-slate-700 rounded-lg transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+                    Sao chép
+                </button>
+<button id="clearBtn" class="px-4 py-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-red-500 dark:hover:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/20 rounded-lg transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+                    Xóa kết quả
+                </button>
+</div>
+</section>
+</main>
+<div class="fixed top-0 left-0 w-full h-full -z-10 overflow-hidden pointer-events-none">
+<div class="absolute -top-[20%] -right-[10%] w-[50%] h-[50%] bg-primary/5 rounded-full blur-3xl"></div>
+<div class="absolute top-[40%] -left-[10%] w-[30%] h-[30%] bg-blue-400/5 rounded-full blur-3xl"></div>
+</div>
+<script type="module" src="./js/advanced-features.js"></script>
+
+</body></html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CheckOutDialog - Chi tiết hóa đơn</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar for better aesthetics inside the modal */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background-color: #cbd5e1;
+            border-radius: 20px;
+        }
+        .dark .custom-scrollbar::-webkit-scrollbar-thumb {
+            background-color: #475569;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased text-slate-900 dark:text-slate-100 relative h-screen w-full overflow-hidden">
+<!-- Background Image with Overlay (Simulating the app behind the modal) -->
+<div class="absolute inset-0 z-0 bg-cover bg-center opacity-20 pointer-events-none" data-alt="Blurred background of a modern hotel lobby" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB5tWK3aG6DxH2uNlpJRcJWRgXcA6UxdWa0Nk16YbA4S9KfUW6XyAFOgBpYjx2IJ-FPogmVa--2B125krqvF1aKY5h2y9Q9LpfWv0QoOeAETpgyS_qKsV6pzok9HxWWpPsytzRTo5EVzpSGoRgg3yLyaR_cPvov4L8eL6-wSU2KZ3bpPNqhIi5S3UbQFvSE2LszhLt0IstZ-wL_zDOqtTRNXHFdAyfcLFVdB0ZfS2_05wq_X0K5hTTozPH6K4lskDbWYV1rgpXdfhk');"></div>
+<!-- Modal Overlay -->
+<div class="absolute inset-0 z-10 flex items-center justify-center bg-slate-900/60 backdrop-blur-sm p-4 animate-fade-in">
+<!-- Modal Container -->
+<div class="flex flex-col w-full max-w-[960px] max-h-[90vh] bg-white dark:bg-slate-900 rounded-xl shadow-2xl border border-slate-200 dark:border-slate-800 overflow-hidden ring-1 ring-slate-900/5">
+<!-- Header -->
+<div class="flex items-center justify-between px-6 py-5 border-b border-slate-200 dark:border-slate-800 shrink-0 bg-white dark:bg-slate-900 z-20">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">receipt_long</span>
+</div>
+<div>
+<h2 class="text-xl font-bold text-slate-900 dark:text-white leading-tight uppercase tracking-tight">Chi Tiết Hóa Đơn</h2>
+<p class="text-sm text-slate-500 dark:text-slate-400">Kiểm tra thông tin trước khi xác nhận</p>
+</div>
+</div>
+<button class="group p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined text-slate-400 group-hover:text-slate-600 dark:group-hover:text-slate-200">close</span>
+</button>
+</div>
+<!-- Scrollable Body -->
+<div class="flex-1 overflow-y-auto custom-scrollbar p-6 bg-slate-50/50 dark:bg-slate-900/50">
+<!-- Info Grid Section -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+<!-- Customer Info -->
+<div class="bg-white dark:bg-slate-800 p-4 rounded-lg border border-slate-200 dark:border-slate-700 shadow-sm">
+<div class="flex items-center gap-2 mb-3 text-primary">
+<span class="material-symbols-outlined text-[20px]">person</span>
+<h3 class="text-sm font-semibold uppercase tracking-wider">Khách hàng</h3>
+</div>
+<div class="space-y-3">
+<div>
+<p class="text-xs text-slate-500 dark:text-slate-400 font-medium">Họ và tên</p>
+<p class="text-sm font-medium text-slate-900 dark:text-slate-100">Nguyễn Văn A</p>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<div>
+<p class="text-xs text-slate-500 dark:text-slate-400 font-medium">Mã KH</p>
+<p class="text-sm text-slate-700 dark:text-slate-300">KH001</p>
+</div>
+<div>
+<p class="text-xs text-slate-500 dark:text-slate-400 font-medium">SĐT</p>
+<p class="text-sm text-slate-700 dark:text-slate-300">0912345678</p>
+</div>
+</div>
+<div>
+<p class="text-xs text-slate-500 dark:text-slate-400 font-medium">CCCD/CMND</p>
+<p class="text-sm text-slate-700 dark:text-slate-300">079090001234</p>
+</div>
+</div>
+</div>
+<!-- Room Info -->
+<div class="bg-white dark:bg-slate-800 p-4 rounded-lg border border-slate-200 dark:border-slate-700 shadow-sm">
+<div class="flex items-center gap-2 mb-3 text-primary">
+<span class="material-symbols-outlined text-[20px]">meeting_room</span>
+<h3 class="text-sm font-semibold uppercase tracking-wider">Thông tin phòng</h3>
+</div>
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<div>
+<p class="text-xs text-slate-500 dark:text-slate-400 font-medium">Số phòng</p>
+<p class="text-lg font-bold text-primary">P305</p>
+</div>
+<div class="text-right">
+<p class="text-xs text-slate-500 dark:text-slate-400 font-medium">Loại phòng</p>
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300">
+                                        Deluxe King
+                                    </span>
+</div>
+</div>
+<div class="pt-2 border-t border-slate-100 dark:border-slate-700">
+<p class="text-xs text-slate-500 dark:text-slate-400 font-medium">Đơn giá phòng</p>
+<p class="text-sm font-medium text-slate-900 dark:text-slate-100">800.000 ₫ / đêm</p>
+</div>
+</div>
+</div>
+<!-- Booking Info -->
+<div class="bg-white dark:bg-slate-800 p-4 rounded-lg border border-slate-200 dark:border-slate-700 shadow-sm">
+<div class="flex items-center gap-2 mb-3 text-primary">
+<span class="material-symbols-outlined text-[20px]">calendar_month</span>
+<h3 class="text-sm font-semibold uppercase tracking-wider">Thời gian lưu trú</h3>
+</div>
+<div class="space-y-3">
+<div class="grid grid-cols-2 gap-4">
+<div>
+<p class="text-xs text-slate-500 dark:text-slate-400 font-medium">Ngày nhận</p>
+<p class="text-sm font-medium text-slate-900 dark:text-slate-100">20/10/2023</p>
+<p class="text-xs text-slate-500">14:00</p>
+</div>
+<div>
+<p class="text-xs text-slate-500 dark:text-slate-400 font-medium">Ngày trả</p>
+<p class="text-sm font-medium text-slate-900 dark:text-slate-100">23/10/2023</p>
+<p class="text-xs text-slate-500">12:00</p>
+</div>
+</div>
+<div class="pt-2 border-t border-slate-100 dark:border-slate-700 flex justify-between items-center">
+<p class="text-xs text-slate-500 dark:text-slate-400 font-medium">Số ngày ở</p>
+<p class="text-sm font-bold text-slate-900 dark:text-slate-100">3 ngày</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Room Calculation Line -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-primary/5 dark:bg-primary/10 border border-primary/20 rounded-lg px-6 py-4 mb-8">
+<div class="flex items-center gap-4">
+<div class="flex items-center justify-center rounded-lg bg-white dark:bg-slate-800 text-primary shadow-sm shrink-0 size-10">
+<span class="material-symbols-outlined">bed</span>
+</div>
+<div>
+<p class="text-slate-900 dark:text-slate-100 font-medium">Tiền phòng</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">3 ngày x 800.000 ₫</p>
+</div>
+</div>
+<div class="text-right">
+<p class="text-lg font-bold text-slate-900 dark:text-white">2.400.000 ₫</p>
+</div>
+</div>
+<!-- Services Table Section -->
+<div class="mb-8">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-sm font-bold text-slate-800 dark:text-slate-200 uppercase tracking-wide">Chi tiết dịch vụ</h3>
+<span class="text-xs font-medium px-2 py-1 rounded bg-slate-100 dark:bg-slate-800 text-slate-500">3 Dịch vụ</span>
+</div>
+<div class="overflow-hidden rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 shadow-sm">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-slate-50 dark:bg-slate-800/80 border-b border-slate-200 dark:border-slate-700">
+<th class="px-6 py-3 text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Tên dịch vụ</th>
+<th class="px-6 py-3 text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider text-right">Đơn giá</th>
+<th class="px-6 py-3 text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider text-center">Số lượng</th>
+<th class="px-6 py-3 text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider text-right">Thành tiền</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-slate-100 dark:divide-slate-700">
+<tr class="hover:bg-slate-50 dark:hover:bg-slate-700/30 transition-colors">
+<td class="px-6 py-3 text-sm text-slate-700 dark:text-slate-300">Nước suối</td>
+<td class="px-6 py-3 text-sm text-slate-500 dark:text-slate-400 text-right">10.000 ₫</td>
+<td class="px-6 py-3 text-sm text-slate-500 dark:text-slate-400 text-center">2</td>
+<td class="px-6 py-3 text-sm font-medium text-slate-700 dark:text-slate-300 text-right">20.000 ₫</td>
+</tr>
+<tr class="hover:bg-slate-50 dark:hover:bg-slate-700/30 transition-colors">
+<td class="px-6 py-3 text-sm text-slate-700 dark:text-slate-300">Bia Tiger</td>
+<td class="px-6 py-3 text-sm text-slate-500 dark:text-slate-400 text-right">25.000 ₫</td>
+<td class="px-6 py-3 text-sm text-slate-500 dark:text-slate-400 text-center">4</td>
+<td class="px-6 py-3 text-sm font-medium text-slate-700 dark:text-slate-300 text-right">100.000 ₫</td>
+</tr>
+<tr class="hover:bg-slate-50 dark:hover:bg-slate-700/30 transition-colors">
+<td class="px-6 py-3 text-sm text-slate-700 dark:text-slate-300">Giặt ủi</td>
+<td class="px-6 py-3 text-sm text-slate-500 dark:text-slate-400 text-right">50.000 ₫</td>
+<td class="px-6 py-3 text-sm text-slate-500 dark:text-slate-400 text-center">1</td>
+<td class="px-6 py-3 text-sm font-medium text-slate-700 dark:text-slate-300 text-right">50.000 ₫</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Summary Section -->
+<div class="flex justify-end">
+<div class="w-full max-w-sm space-y-3">
+<div class="flex justify-between items-center text-sm">
+<span class="text-slate-500 dark:text-slate-400">Tổng tiền phòng:</span>
+<span class="font-medium text-slate-900 dark:text-slate-200">2.400.000 ₫</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-slate-500 dark:text-slate-400">Tổng tiền dịch vụ:</span>
+<span class="font-medium text-slate-900 dark:text-slate-200">170.000 ₫</span>
+</div>
+<div class="h-px bg-slate-200 dark:bg-slate-700 my-2"></div>
+<div class="flex justify-between items-center">
+<span class="text-base font-bold text-slate-800 dark:text-white uppercase">Tổng cộng</span>
+<span class="text-2xl font-bold text-primary">2.570.000 ₫</span>
+</div>
+<div class="text-right">
+<span class="text-xs text-slate-400 italic">Đã bao gồm VAT và phí dịch vụ</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Actions -->
+<div class="px-6 py-4 bg-slate-50 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 shrink-0 flex items-center justify-between">
+<button class="flex items-center gap-2 text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200 transition-colors text-sm font-medium">
+<span class="material-symbols-outlined text-[20px]">print</span>
+                    In hóa đơn
+                </button>
+<div class="flex gap-3">
+<button class="px-5 py-2.5 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-transparent text-slate-700 dark:text-slate-300 font-medium hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-200">
+                        Hủy
+                    </button>
+<button class="px-5 py-2.5 rounded-lg bg-primary hover:bg-blue-600 text-white font-semibold shadow-lg shadow-blue-500/30 transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+                        Xác nhận trả phòng
+                    </button>
+</div>
+</div>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CheckInDialog - Quản lý Khách sạn</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "primary-hover": "#1068c2",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#1e2936",
+                        "text-main": "#0d141b",
+                        "text-secondary": "#4c739a",
+                        "border-color": "#cfdbe7",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "Noto Sans", "sans-serif"],
+                        "body": ["Inter", "Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                    boxShadow: {
+                        "modal": "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-main antialiased h-screen overflow-hidden flex items-center justify-center">
+<!-- Backdrop Overlay -->
+<div class="fixed inset-0 bg-slate-900/40 backdrop-blur-sm transition-opacity z-40"></div>
+<!-- CheckIn Dialog Container -->
+<div class="relative z-50 w-full max-w-lg transform rounded-xl bg-surface-light dark:bg-surface-dark shadow-modal transition-all m-4 flex flex-col">
+<!-- Dialog Header -->
+<div class="flex items-center justify-between border-b border-border-color/50 px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined text-2xl">check_circle</span>
+</div>
+<h3 class="text-lg font-bold leading-tight tracking-[-0.015em] text-gray-900 dark:text-white">
+                    Nhận phòng
+                </h3>
+</div>
+<button class="flex h-8 w-8 items-center justify-center rounded-full text-gray-400 hover:bg-gray-100 hover:text-gray-600 dark:hover:bg-slate-700 dark:hover:text-gray-200 transition-colors focus:outline-none">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+<!-- Dialog Body -->
+<div class="p-6">
+<p class="mb-5 text-sm text-gray-500 dark:text-gray-400">
+                Nhập mã phòng hoặc mã đặt phòng của khách để tiến hành thủ tục nhận phòng.
+            </p>
+<div class="flex flex-col gap-4">
+<label class="flex flex-col gap-2">
+<span class="text-sm font-semibold text-gray-700 dark:text-gray-200">Mã phòng hoặc Mã đặt phòng <span class="text-red-500">*</span></span>
+<div class="relative">
+<span class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 dark:text-gray-500">
+<span class="material-symbols-outlined text-[20px]">meeting_room</span>
+</span>
+<input autofocus="" class="form-input block w-full rounded-lg border-border-color bg-slate-50 p-3 pl-11 text-base text-gray-900 placeholder-gray-400 focus:border-primary focus:ring-1 focus:ring-primary dark:bg-slate-800 dark:border-slate-600 dark:text-white dark:focus:border-primary transition-shadow h-14" placeholder="VD: 302 hoặc RES-2024..." type="text"/>
+</div>
+</label>
+<!-- Helper/Status Message Area (Hidden by default, shown for example context) -->
+<!-- <div class="rounded-md bg-yellow-50 p-3 flex gap-2 items-start border border-yellow-100">
+                    <span class="material-symbols-outlined text-yellow-600 text-sm mt-0.5">info</span>
+                    <p class="text-xs text-yellow-700">Hãy đảm bảo khách đã thanh toán hoặc đặt cọc trước khi nhận phòng.</p>
+                </div> -->
+</div>
+</div>
+<!-- Dialog Footer -->
+<div class="flex items-center justify-end gap-3 border-t border-border-color/50 px-6 py-4 bg-gray-50/50 dark:bg-slate-800/30 rounded-b-xl">
+<button class="inline-flex h-10 min-w-[84px] cursor-pointer items-center justify-center rounded-lg border border-border-color bg-white px-4 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:bg-slate-700 dark:border-slate-600 dark:text-gray-200 dark:hover:bg-slate-600 dark:focus:ring-slate-500 transition-colors">
+                Hủy
+            </button>
+<button class="inline-flex h-10 min-w-[84px] cursor-pointer items-center justify-center gap-2 rounded-lg bg-primary px-4 text-sm font-bold text-white hover:bg-primary-hover focus:outline-none focus:ring-2 focus:ring-primary/50 shadow-sm transition-colors">
+<span class="material-symbols-outlined text-[18px]">login</span>
+                Xác nhận nhận phòng
+            </button>
+</div>
+</div>
+</body></html>

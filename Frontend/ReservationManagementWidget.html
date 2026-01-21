@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html class="light" lang="vi">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Quản lý đặt phòng</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#137fec",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+          },
+          fontFamily: {
+            "display": ["Inter", "Noto Sans", "sans-serif"]
+          },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet"/>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .material-symbols-outlined.filled {
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#1f2937] antialiased">
+<!-- Sidebar will be inserted here by sidebar.html -->
+<div id="sidebar-container"></div>
+
+<div class="flex h-screen w-full flex-col overflow-hidden items-center justify-center">
+<div class="w-full max-w-[1400px] h-[90vh] flex flex-col bg-white dark:bg-[#1a2632] rounded-xl shadow-lg border border-[#cfdbe7] dark:border-gray-700 overflow-hidden">
+
+<!-- Header -->
+<div class="w-full bg-white dark:bg-[#1a2632] border-b border-[#cfdbe7] dark:border-gray-700 p-6 flex flex-col gap-6 shadow-sm z-10">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[32px] text-primary">event_note</span>
+<div>
+<h1 class="text-2xl font-bold tracking-tight text-[#0d141b] dark:text-white">Quản lý đặt phòng</h1>
+<p class="text-[#4c739a] dark:text-gray-400 text-sm">Hệ thống quản lý đặt phòng và nhận phòng</p>
+</div>
+</div>
+</div>
+
+<!-- Search & Filter -->
+<div class="flex flex-col md:flex-row gap-4 items-end md:items-center justify-between">
+<div class="flex flex-1 w-full md:w-auto gap-4 items-end">
+<div class="flex flex-col gap-1.5 flex-1 max-w-lg">
+<label class="text-xs font-semibold text-[#4c739a] uppercase tracking-wider">Tìm kiếm theo mã</label>
+<div class="relative flex items-center">
+<span class="absolute left-3 text-[#4c739a]">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</span>
+<input id="search-input" class="w-full h-10 pl-10 pr-4 rounded-lg border border-[#cfdbe7] bg-[#f8fafc] dark:bg-[#253240] dark:border-gray-600 dark:text-white text-sm focus:ring-2 focus:ring-primary focus:border-primary transition-all placeholder:text-[#9ca3af]" placeholder="Tìm kiếm theo mã đặt, mã phòng, mã khách..."/>
+<button id="clear-search-btn" class="absolute right-2 text-[#9ca3af] hover:text-[#0d141b] dark:hover:text-white" title="Xóa nội dung">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+</button>
+</div>
+</div>
+
+<button id="status-filter-btn" class="h-10 px-4 rounded-lg bg-slate-100 dark:bg-[#253240] hover:bg-slate-200 dark:hover:bg-[#304050] text-slate-700 dark:text-gray-300 text-sm font-bold shadow-sm transition-all flex items-center gap-2 whitespace-nowrap border border-slate-200 dark:border-gray-600">
+<span class="material-symbols-outlined text-[20px]">filter_list</span>
+<span>Lọc trạng thái</span>
+</button>
+
+<button id="refresh-btn" class="h-10 px-4 rounded-lg bg-primary hover:bg-blue-600 text-white text-sm font-bold shadow-md shadow-blue-200 dark:shadow-none transition-all flex items-center gap-2 whitespace-nowrap">
+<span class="material-symbols-outlined text-[20px]">refresh</span>
+<span>Làm mới</span>
+</button>
+</div>
+</div>
+</div>
+
+<!-- Content -->
+<div class="flex-1 overflow-auto bg-background-light dark:bg-background-dark p-6">
+<div class="h-full flex flex-col">
+<div id="notification-banner" class="mb-4 w-full h-[30px] flex items-center justify-center rounded bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-400 text-sm font-bold shadow-sm border border-emerald-200 dark:border-emerald-800/50 select-none transition-all hidden">
+Thao tác thành công.
+</div>
+<div class="flex-1 rounded-xl border border-[#cfdbe7] dark:border-gray-700 bg-white dark:bg-[#1a2632] overflow-hidden shadow-sm flex flex-col">
+<div class="overflow-auto flex-1">
+<table class="w-full text-left border-collapse">
+<thead class="sticky top-0 z-10 bg-gray-50 dark:bg-[#253240] border-b border-[#cfdbe7] dark:border-gray-700 shadow-sm">
+<tr>
+<th class="px-6 py-4 text-xs font-bold text-[#4c739a] dark:text-gray-300 uppercase tracking-wider">MÃ ĐẶT PHÒNG</th>
+<th class="px-6 py-4 text-xs font-bold text-[#4c739a] dark:text-gray-300 uppercase tracking-wider">MÃ KHÁCH</th>
+<th class="px-6 py-4 text-xs font-bold text-[#4c739a] dark:text-gray-300 uppercase tracking-wider">HỌ TÊN</th>
+<th class="px-6 py-4 text-xs font-bold text-[#4c739a] dark:text-gray-300 uppercase tracking-wider">MÃ PHÒNG</th>
+<th class="px-6 py-4 text-xs font-bold text-[#4c739a] dark:text-gray-300 uppercase tracking-wider">NGÀY NHẬN</th>
+<th class="px-6 py-4 text-xs font-bold text-[#4c739a] dark:text-gray-300 uppercase tracking-wider">NGÀY TRẢ</th>
+<th class="px-6 py-4 text-xs font-bold text-[#4c739a] dark:text-gray-300 uppercase tracking-wider">TRẠNG THÁI</th>
+</tr>
+</thead>
+<tbody id="table-tbody" class="divide-y divide-[#cfdbe7] dark:divide-gray-700">
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Footer -->
+<div class="bg-white dark:bg-[#1a2632] border-t border-[#cfdbe7] dark:border-gray-700 p-4 shadow-lg z-20">
+<div class="flex flex-col xl:flex-row gap-4 justify-between items-center w-full">
+<div class="flex gap-3 w-full xl:w-auto">
+<button id="add-reservation-btn" class="flex-1 xl:flex-none h-10 px-5 rounded-lg bg-primary hover:bg-blue-600 text-white text-sm font-bold shadow-sm transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[20px]">add</span>Đặt phòng mới</button>
+<button id="checkin-btn" class="flex-1 xl:flex-none h-10 px-5 rounded-lg bg-emerald-50 hover:bg-emerald-100 text-emerald-600 border border-emerald-200 text-sm font-bold transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[20px]">login</span>Nhận phòng</button>
+<button id="cancel-btn" class="flex-1 xl:flex-none h-10 px-5 rounded-lg bg-red-50 hover:bg-red-100 text-red-600 border border-red-200 text-sm font-bold transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[20px]">cancel</span>Hủy phòng</button>
+<button id="delete-reservation-btn" class="flex-1 xl:flex-none h-10 px-5 rounded-lg bg-red-50 hover:bg-red-100 text-red-600 border border-red-200 text-sm font-bold transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[20px]">delete</span>Xóa đơn đặt phòng</button>
+</div>
+<div class="flex items-center gap-2 text-xs text-[#4c739a] dark:text-gray-400 bg-gray-50 dark:bg-[#253240] px-3 py-1.5 rounded-full border border-gray-100 dark:border-gray-600 w-full xl:w-auto justify-center xl:justify-end">
+<span class="material-symbols-outlined text-[16px] animate-spin" style="animation-duration: 3s;">hourglass_empty</span>
+<span>Thời gian thực thi: <span id="execution-time">0.0</span> ms</span>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- Add Reservation Modal -->
+<div id="add-modal" class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 hidden overflow-y-auto">
+<div class="bg-white dark:bg-[#1a2632] rounded-lg shadow-xl w-full max-w-2xl p-6 my-8">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-[24px] text-primary">add_circle</span>
+<div>
+<h3 class="text-lg font-bold">Đặt phòng mới</h3>
+<p class="text-xs text-[#4c739a] dark:text-gray-400">Nhập thông tin chi tiết đặt phòng</p>
+</div>
+<button id="add-close-btn" class="ml-auto text-[#9ca3af] hover:text-[#0d141b] dark:hover:text-white">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+
+<div class="space-y-4">
+<!-- Reservation ID -->
+<div>
+<label class="text-sm font-medium text-[#4c739a] dark:text-gray-400">Mã đặt phòng *</label>
+<div class="relative mt-1">
+  <input id="add-res-id" type="text" placeholder="VD: RES-001" class="w-full px-3 py-2 bg-slate-50 dark:bg-[#253240] border border-[#cfdbe7] dark:border-gray-600 rounded-lg text-sm text-[#0d141b] dark:text-white focus:ring-2 focus:ring-primary/20"/>
+  <div id="add-resid-dropdown" class="absolute top-full mt-1 w-full bg-white dark:bg-[#253240] border border-[#cfdbe7] dark:border-gray-600 rounded-lg shadow-lg hidden max-h-48 overflow-y-auto z-10"></div>
+  </div>
+</div>
+
+<!-- Customer -->
+<div>
+<label class="text-sm font-medium text-[#4c739a] dark:text-gray-400">Khách hàng *</label>
+<div class="relative mt-1">
+<input id="add-customer-input" type="text" placeholder="Tìm khách hàng..." class="w-full px-3 py-2 bg-slate-50 dark:bg-[#253240] border border-[#cfdbe7] dark:border-gray-600 rounded-lg text-sm text-[#0d141b] dark:text-white focus:ring-2 focus:ring-primary/20"/>
+<div id="add-customer-dropdown" class="absolute top-full mt-1 w-full bg-white dark:bg-[#253240] border border-[#cfdbe7] dark:border-gray-600 rounded-lg shadow-lg hidden max-h-48 overflow-y-auto z-10">
+</div>
+</div>
+<input id="add-customer-id" type="hidden"/>
+</div>
+
+<!-- Check-in Date -->
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="text-sm font-medium text-[#4c739a] dark:text-gray-400">Ngày nhận phòng *</label>
+<input id="add-checkin-date" type="date" class="mt-1 w-full px-3 py-2 bg-slate-50 dark:bg-[#253240] border border-[#cfdbe7] dark:border-gray-600 rounded-lg text-sm text-[#0d141b] dark:text-white focus:ring-2 focus:ring-primary/20"/>
+</div>
+<div>
+<label class="text-sm font-medium text-[#4c739a] dark:text-gray-400">Ngày trả phòng *</label>
+<input id="add-checkout-date" type="date" class="mt-1 w-full px-3 py-2 bg-slate-50 dark:bg-[#253240] border border-[#cfdbe7] dark:border-gray-600 rounded-lg text-sm text-[#0d141b] dark:text-white focus:ring-2 focus:ring-primary/20"/>
+</div>
+</div>
+
+<!-- Room -->
+<div>
+<label class="text-sm font-medium text-[#4c739a] dark:text-gray-400">Phòng trống *</label>
+<div class="relative mt-1">
+<input id="add-room-input" type="text" placeholder="Tìm phòng..." class="w-full px-3 py-2 bg-slate-50 dark:bg-[#253240] border border-[#cfdbe7] dark:border-gray-600 rounded-lg text-sm text-[#0d141b] dark:text-white focus:ring-2 focus:ring-primary/20"/>
+<div id="add-room-dropdown" class="absolute top-full mt-1 w-full bg-white dark:bg-[#253240] border border-[#cfdbe7] dark:border-gray-600 rounded-lg shadow-lg hidden max-h-48 overflow-y-auto z-10">
+</div>
+</div>
+<input id="add-room-id" type="hidden"/>
+</div>
+
+<!-- Nights Info -->
+<div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-3">
+<div class="flex gap-2">
+<span class="material-symbols-outlined text-[20px] text-blue-600 dark:text-blue-400">info</span>
+<div>
+<p class="text-sm font-medium text-blue-900 dark:text-blue-300" id="nights-info">Chọn ngày để tính số đêm</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="flex gap-2 mt-6">
+<button id="add-cancel-btn" class="flex-1 px-4 py-2 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200 rounded-lg text-sm hover:bg-slate-200 dark:hover:bg-slate-600 font-medium transition">Hủy</button>
+<button id="add-save-btn" class="flex-1 px-4 py-2 bg-primary text-white rounded-lg text-sm hover:bg-blue-700 font-medium transition">Đặt phòng</button>
+</div>
+</div>
+</div>
+
+<!-- Check-in Modal -->
+<div id="checkin-modal" class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 hidden overflow-y-auto">
+<div class="bg-white dark:bg-[#1a2632] rounded-lg shadow-xl w-full max-w-md p-6 my-8">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-[24px] text-emerald-600">check_circle</span>
+<h3 class="text-lg font-bold">Nhận phòng</h3>
+<button id="checkin-close-btn" class="ml-auto text-[#9ca3af] hover:text-[#0d141b] dark:hover:text-white">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+
+<p class="text-sm text-[#4c739a] dark:text-gray-400 mb-4">Nhập mã đặt phòng hoặc chọn từ danh sách</p>
+
+<div>
+<label class="text-sm font-medium text-[#4c739a] dark:text-gray-400">Mã đặt phòng *</label>
+<div class="relative mt-1">
+<input id="checkin-res-input" type="text" placeholder="Tìm đặt phòng..." class="w-full px-3 py-2 bg-slate-50 dark:bg-[#253240] border border-[#cfdbe7] dark:border-gray-600 rounded-lg text-sm text-[#0d141b] dark:text-white focus:ring-2 focus:ring-primary/20"/>
+<div id="checkin-res-dropdown" class="absolute top-full mt-1 w-full bg-white dark:bg-[#253240] border border-[#cfdbe7] dark:border-gray-600 rounded-lg shadow-lg hidden max-h-48 overflow-y-auto z-10">
+</div>
+</div>
+<input id="checkin-res-id" type="hidden"/>
+</div>
+
+<div class="flex gap-2 mt-6">
+<button id="checkin-cancel-btn" class="flex-1 px-4 py-2 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200 rounded-lg text-sm hover:bg-slate-200 dark:hover:bg-slate-600 font-medium transition">Hủy</button>
+<button id="checkin-confirm-btn" class="flex-1 px-4 py-2 bg-emerald-600 text-white rounded-lg text-sm hover:bg-emerald-700 font-medium transition">Xác nhận nhận phòng</button>
+</div>
+</div>
+</div>
+
+<!-- Cancel Modal -->
+<div id="cancel-modal" class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 hidden overflow-y-auto">
+<div class="bg-white dark:bg-[#1a2632] rounded-lg shadow-xl w-full max-w-md p-6 my-8">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-[24px] text-red-600">block</span>
+<h3 class="text-lg font-bold">Hủy phòng</h3>
+<button id="cancel-close-btn" class="ml-auto text-[#9ca3af] hover:text-[#0d141b] dark:hover:text-white">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+
+<p class="text-sm text-[#4c739a] dark:text-gray-400 mb-4">Nhập mã đặt phòng hoặc chọn từ danh sách</p>
+
+<div>
+<label class="text-sm font-medium text-[#4c739a] dark:text-gray-400">Mã đặt phòng *</label>
+<div class="relative mt-1">
+<input id="cancel-res-input" type="text" placeholder="Tìm đặt phòng..." class="w-full px-3 py-2 bg-slate-50 dark:bg-[#253240] border border-[#cfdbe7] dark:border-gray-600 rounded-lg text-sm text-[#0d141b] dark:text-white focus:ring-2 focus:ring-primary/20"/>
+<div id="cancel-res-dropdown" class="absolute top-full mt-1 w-full bg-white dark:bg-[#253240] border border-[#cfdbe7] dark:border-gray-600 rounded-lg shadow-lg hidden max-h-48 overflow-y-auto z-10">
+</div>
+</div>
+<input id="cancel-res-id" type="hidden"/>
+</div>
+
+<div class="flex gap-2 mt-6">
+<button id="cancel-close-dialog-btn" class="flex-1 px-4 py-2 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200 rounded-lg text-sm hover:bg-slate-200 dark:hover:bg-slate-600 font-medium transition">Hủy</button>
+<button id="cancel-confirm-btn" class="flex-1 px-4 py-2 bg-red-600 text-white rounded-lg text-sm hover:bg-red-700 font-medium transition">Xác nhận hủy phòng</button>
+</div>
+</div>
+</div>
+
+<!-- Delete Reservation Modal -->
+<div id="delete-res-modal" class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 hidden overflow-y-auto">
+  <div class="bg-white dark:bg-[#1a2632] rounded-lg shadow-xl w-full max-w-md p-6 my-8">
+    <div class="flex items-center gap-3 mb-4">
+      <span class="material-symbols-outlined text-[24px] text-red-600">delete</span>
+      <h3 class="text-lg font-bold">Xóa đơn đặt phòng</h3>
+      <button id="delete-res-close-btn" class="ml-auto text-[#9ca3af] hover:text-[#0d141b] dark:hover:text-white">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+    </div>
+
+    <p class="text-sm text-[#4c739a] dark:text-gray-400 mb-4">Vui lòng nhập mã đơn đặt phòng để xác nhận xóa. Thao tác này sẽ xóa dữ liệu đặt phòng khỏi hệ thống.</p>
+
+    <div>
+      <label class="text-sm font-medium text-[#4c739a] dark:text-gray-400">Mã đơn đặt phòng cần xóa *</label>
+      <input id="delete-res-id" type="text" placeholder="Nhập mã đặt phòng (VD: RES-001)" class="mt-1 w-full px-3 py-2 bg-slate-50 dark:bg-[#253240] border border-[#cfdbe7] dark:border-gray-600 rounded-lg text-sm text-[#0d141b] dark:text-white focus:ring-2 focus:ring-primary/20"/>
+    </div>
+
+    <div class="flex gap-2 mt-6">
+      <button id="delete-res-cancel-btn" class="flex-1 px-4 py-2 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200 rounded-lg text-sm hover:bg-slate-200 dark:hover:bg-slate-600 font-medium transition">Hủy</button>
+      <button id="delete-res-confirm-btn" class="flex-1 px-4 py-2 bg-red-600 text-white rounded-lg text-sm hover:bg-red-700 font-medium transition">Xóa</button>
+    </div>
+  </div>
+</div>
+
+<script type="module" src="js/reservation-management-widget.js?v=20260113"></script>
+
+</body>
+</html>

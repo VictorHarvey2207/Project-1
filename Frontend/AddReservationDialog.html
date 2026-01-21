@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Đặt phòng mới - Hotel Management</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar for better look in the modal if content overflows */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+        .dark ::-webkit-scrollbar-thumb {
+            background: #475569;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased text-slate-900 dark:text-white min-h-screen flex items-center justify-center p-4">
+<!-- Modal Backdrop -->
+<div aria-labelledby="modal-title" aria-modal="true" class="relative z-10" role="dialog">
+<!-- Background backdrop -->
+<div class="fixed inset-0 bg-gray-900/60 backdrop-blur-sm transition-opacity"></div>
+<div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+<div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+<!-- Modal Panel -->
+<div class="relative transform overflow-hidden rounded-xl bg-white dark:bg-[#1A2633] text-left shadow-2xl transition-all sm:my-8 sm:w-full sm:max-w-2xl border border-gray-100 dark:border-gray-700">
+<!-- Header -->
+<div class="flex items-center justify-between px-6 py-5 border-b border-gray-100 dark:border-gray-700">
+<h2 class="text-xl font-bold leading-6 text-slate-900 dark:text-white flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">add_circle</span>
+                            Đặt phòng mới
+                        </h2>
+<button class="rounded-full p-1 text-gray-400 hover:text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors focus:outline-none focus:ring-2 focus:ring-primary" type="button">
+<span class="sr-only">Close</span>
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<!-- Content Body -->
+<div class="px-6 py-6 space-y-6">
+<!-- Reservation Code & Customer Row -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Reservation ID -->
+<div class="flex flex-col space-y-2">
+<label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-slate-700 dark:text-slate-300" for="reservation-id">
+                                    Mã đặt phòng <span class="text-red-500">*</span>
+</label>
+<div class="relative">
+<input class="flex h-12 w-full rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-[#101922] px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent disabled:cursor-not-allowed disabled:opacity-50 text-slate-900 dark:text-white transition-all" id="reservation-id" placeholder="VD: RES-2023-001" type="text" value="RES-839210"/>
+<div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none text-green-500">
+<span class="material-symbols-outlined text-lg">check_circle</span>
+</div>
+</div>
+</div>
+<!-- Customer Selection -->
+<div class="flex flex-col space-y-2">
+<label class="text-sm font-medium leading-none text-slate-700 dark:text-slate-300" for="customer-select">
+                                    Khách hàng <span class="text-red-500">*</span>
+</label>
+<div class="relative">
+<select class="flex h-12 w-full appearance-none rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-[#101922] px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-slate-900 dark:text-white transition-all" id="customer-select">
+<option disabled="" value="">Chọn hoặc tìm khách hàng...</option>
+<option value="kh001">Nguyễn Văn A - 0901234567</option>
+<option selected="" value="kh002">Trần Thị B - 0909876543</option>
+<option value="kh003">Lê Văn C - 0912345678</option>
+</select>
+<div class="absolute inset-y-0 right-0 flex items-center px-3 pointer-events-none text-gray-500 dark:text-gray-400">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+<div class="absolute inset-y-0 right-10 flex items-center pointer-events-none text-gray-400">
+<span class="material-symbols-outlined text-lg">search</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Date Selection Row -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Check-in Date -->
+<div class="flex flex-col space-y-2">
+<label class="text-sm font-medium leading-none text-slate-700 dark:text-slate-300" for="check-in">
+                                    Ngày nhận phòng
+                                </label>
+<div class="relative">
+<input class="flex h-12 w-full rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-[#101922] px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-slate-900 dark:text-white transition-all" id="check-in" type="date" value="2023-10-25"/>
+</div>
+</div>
+<!-- Check-out Date -->
+<div class="flex flex-col space-y-2">
+<label class="text-sm font-medium leading-none text-slate-700 dark:text-slate-300" for="check-out">
+                                    Ngày trả phòng <span class="text-red-500">*</span>
+</label>
+<div class="relative">
+<input class="flex h-12 w-full rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-[#101922] px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-slate-900 dark:text-white transition-all" id="check-out" type="date"/>
+</div>
+<p class="text-xs text-red-500 mt-1 hidden" id="date-error">Ngày trả phòng phải sau ngày nhận phòng.</p>
+</div>
+</div>
+<!-- Room Selection -->
+<div class="flex flex-col space-y-2">
+<label class="text-sm font-medium leading-none text-slate-700 dark:text-slate-300" for="room-select">
+                                Phòng trống <span class="text-red-500">*</span>
+</label>
+<div class="relative group">
+<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-gray-400 group-focus-within:text-primary transition-colors">bed</span>
+</div>
+<select class="flex h-12 w-full appearance-none rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-[#101922] pl-10 pr-10 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-slate-900 dark:text-white transition-all" id="room-select">
+<option disabled="" selected="" value="">Chọn phòng...</option>
+<optgroup label="Phòng Đơn (Single)">
+<option value="101">101 - Hướng vườn (Trống)</option>
+<option value="102">102 - Hướng biển (Trống)</option>
+</optgroup>
+<optgroup label="Phòng Đôi (Double)">
+<option value="205">205 - Cao cấp (Trống)</option>
+</optgroup>
+</select>
+<div class="absolute inset-y-0 right-0 flex items-center px-3 pointer-events-none text-gray-500 dark:text-gray-400">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</div>
+<p class="text-xs text-slate-500 dark:text-slate-400 mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">info</span>
+                                Chỉ hiển thị các phòng trống trong khoảng thời gian đã chọn.
+                            </p>
+</div>
+<!-- Summary / Status Info -->
+<div class="rounded-lg bg-blue-50 dark:bg-blue-900/20 p-4 border border-blue-100 dark:border-blue-800/30">
+<div class="flex">
+<div class="flex-shrink-0">
+<span class="material-symbols-outlined text-primary">info</span>
+</div>
+<div class="ml-3">
+<h3 class="text-sm font-medium text-primary">Thông tin đặt phòng</h3>
+<div class="mt-2 text-sm text-blue-700 dark:text-blue-300">
+<p>Đang tạo đặt phòng cho <span class="font-semibold">2 ngày 1 đêm</span>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Actions -->
+<div class="flex flex-row-reverse bg-gray-50 dark:bg-[#15202B] px-6 py-4 gap-3 border-t border-gray-100 dark:border-gray-700">
+<button class="inline-flex w-full justify-center rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-auto transition-colors items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[20px]">check</span>
+                            Đặt phòng
+                        </button>
+<button class="inline-flex w-full justify-center rounded-lg bg-white dark:bg-transparent px-5 py-2.5 text-sm font-semibold text-gray-900 dark:text-gray-300 shadow-sm ring-1 ring-inset ring-gray-300 dark:ring-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 sm:w-auto transition-colors" type="button">
+                            Hủy
+                        </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body></html>

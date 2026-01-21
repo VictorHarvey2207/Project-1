@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Delete Customer Dialog</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "primary-dark": "#0f66bd",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                        "danger": "#dc2626",
+                        "danger-hover": "#b91c1c",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "Noto Sans", "sans-serif"],
+                        "body": ["Inter", "Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar for webkit */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #cbd5e1;
+            border-radius: 20px;
+        }
+        .dark ::-webkit-scrollbar-thumb {
+            background-color: #334155;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display antialiased min-h-screen relative overflow-hidden flex items-center justify-center">
+<!-- Background Pattern (Simulating Desktop App Context) -->
+<div class="absolute inset-0 z-0 opacity-40 pointer-events-none" style="background-image: radial-gradient(#94a3b8 1px, transparent 1px); background-size: 32px 32px;"></div>
+<!-- Backdrop Overlay -->
+<div class="absolute inset-0 bg-slate-900/40 backdrop-blur-[2px] z-10"></div>
+<!-- Main Dialog Container -->
+<div class="relative z-20 w-full max-w-[480px] m-4 animate-fade-in-up">
+<!-- Dialog Card -->
+<div class="flex flex-col bg-white dark:bg-slate-800 rounded-xl shadow-[0_20px_50px_-12px_rgba(0,0,0,0.25)] border border-slate-200 dark:border-slate-700 overflow-hidden">
+<!-- Header Section -->
+<div class="flex items-center justify-between px-6 py-4 border-b border-slate-100 dark:border-slate-700 bg-white dark:bg-slate-800">
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center w-8 h-8 rounded-full bg-red-50 dark:bg-red-900/20 text-danger">
+<span class="material-symbols-outlined text-[20px]">person_remove</span>
+</div>
+<h3 class="text-lg font-bold leading-tight tracking-[-0.015em] text-slate-900 dark:text-white">Xóa khách hàng</h3>
+</div>
+<button aria-label="Đóng" class="group flex items-center justify-center w-8 h-8 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-slate-400 group-hover:text-slate-600 dark:group-hover:text-slate-200 text-[20px]">close</span>
+</button>
+</div>
+<!-- Content Body -->
+<div class="p-6 flex flex-col gap-6">
+<!-- Informational Text (Context) -->
+<p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+                    Vui lòng nhập mã khách hàng để tiến hành xóa. Hành động này sẽ yêu cầu xác nhận thêm một lần nữa để đảm bảo an toàn dữ liệu.
+                </p>
+<!-- Input Field Component -->
+<div class="flex flex-col gap-2">
+<label class="text-sm font-semibold text-slate-900 dark:text-slate-100" for="customerId">
+                        Mã khách hàng cần xóa <span class="text-danger">*</span>
+</label>
+<div class="relative group">
+<div class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none text-slate-400 group-focus-within:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</div>
+<input autocomplete="off" class="w-full pl-11 pr-4 h-12 rounded-lg border border-slate-200 dark:border-slate-600 bg-slate-50 dark:bg-slate-900/50 text-slate-900 dark:text-white text-base placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all shadow-sm" id="customerId" placeholder="Nhập mã khách hàng (ví dụ: C001)" type="text"/>
+</div>
+</div>
+</div>
+<!-- Footer / Action Buttons -->
+<div class="px-6 py-4 bg-slate-50 dark:bg-slate-800/80 border-t border-slate-100 dark:border-slate-700 flex justify-end gap-3">
+<!-- Cancel Button -->
+<button class="flex items-center justify-center px-4 h-10 rounded-lg text-sm font-bold text-slate-600 dark:text-slate-300 bg-white dark:bg-slate-700 border border-slate-200 dark:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-600 hover:text-slate-800 dark:hover:text-white transition-all shadow-sm cursor-pointer min-w-[84px]">
+                    Hủy
+                </button>
+<!-- Delete Button (Destructive) -->
+<!-- Using Red color as requested for delete action context, distinct from Primary Blue -->
+<button class="flex items-center justify-center px-4 h-10 rounded-lg text-sm font-bold text-white bg-danger hover:bg-danger-hover focus:ring-4 focus:ring-red-300 dark:focus:ring-red-900 transition-all shadow-md cursor-pointer min-w-[84px]">
+<span class="material-symbols-outlined text-[18px] mr-1.5">delete</span>
+                    Xóa
+                </button>
+</div>
+</div>
+</div>
+<!-- Optional: Simulated Toast Notification Area (hidden by default, visualized for context) -->
+<!-- This demonstrates where the success/error message might appear as mentioned in requirements -->
+<!-- 
+    <div class="absolute bottom-6 right-6 flex flex-col gap-2 z-50 pointer-events-none">
+        <div class="bg-white dark:bg-slate-800 shadow-lg rounded-lg p-3 border-l-4 border-green-500 flex items-center gap-3 max-w-sm pointer-events-auto transform translate-y-20 opacity-0 transition-all">
+            <span class="material-symbols-outlined text-green-500">check_circle</span>
+            <div>
+                <p class="text-sm font-bold text-slate-900 dark:text-white">Thành công</p>
+                <p class="text-xs text-slate-500">Đã xóa khách hàng Nguyễn Văn A.</p>
+            </div>
+        </div>
+    </div> 
+    -->
+</body></html>

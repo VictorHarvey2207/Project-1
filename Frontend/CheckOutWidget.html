@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CheckOutWidget - Hotel Management</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922"
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem"}
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .material-symbols-outlined.filled { font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        body {
+            font-family: 'Inter','Noto Sans', sans-serif;
+            background-color: #f6f7f8;
+        }
+        body {
+            font-family: 'Inter','Noto Sans', sans-serif;
+            background-color: #f6f7f8;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            height: 6px;
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #d1d5db; 
+            border-radius: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #9ca3af; 
+        }
+        .table-header th {
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #4c739a;
+            background-color: #f9fafb;
+            padding: 12px 16px;
+            border-bottom: 1px solid #cfdbe7;
+            white-space: nowrap;
+        }
+        .table-row td {
+            padding: 12px 16px;
+            font-size: 14px;
+            color: #4c739a;
+            border-bottom: 1px solid #f3f4f6;
+        }
+        .table-row:last-child td {
+            border-bottom: none;
+        }.checkbox-cell {
+            width: 20px;
+        }
+        .table-row.selected { background-color: #eaf2ff; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#1f2937] antialiased">
+
+<!-- Sidebar will be inserted here by sidebar.html -->
+<div id="sidebar-container"></div>
+
+<div class="flex h-screen w-full flex-col overflow-hidden items-center justify-center">
+<div class="w-full max-w-[1400px] h-[90vh] flex flex-col bg-white dark:bg-[#1a2632] rounded-xl shadow-lg border border-slate-200 dark:border-gray-700 overflow-hidden">
+<div class="px-8 pt-8 pb-4">
+<div class="flex items-start gap-4 mb-6">
+<div class="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center flex-shrink-0 text-blue-500">
+<span class="material-symbols-outlined transform rotate-180" style="font-size: 24px;">login</span>
+</div>
+<div>
+<h1 class="text-2xl font-bold tracking-tight text-[#0d141b]">Trả phòng</h1>
+<p class="text-slate-500 text-sm mt-1">Quản lý và xử lý thủ tục trả phòng cho khách đang lưu trú.</p>
+</div>
+</div>
+<div class="flex gap-4 items-center">
+<div class="relative flex-grow">
+<span class="absolute inset-y-0 left-0 flex items-center pl-3 text-slate-400">
+<span class="material-symbols-outlined" style="font-size: 20px;">search</span>
+</span>
+            <input id="searchInput" class="w-full h-10 rounded-lg border border-slate-200 bg-white pl-10 pr-10 text-slate-700 placeholder-slate-400 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 text-sm transition-all shadow-sm" placeholder="Tìm theo mã đặt phòng, mã phòng, mã khách hoặc họ tên..." type="text"/>
+<button id="clearSearch" class="absolute inset-y-0 right-0 flex items-center pr-3 text-slate-300 hover:text-slate-500 transition-colors">
+<span class="material-symbols-outlined" style="font-size: 18px;">close</span>
+</button>
+</div>
+<button id="refreshBtn" class="h-10 px-4 rounded-lg bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium transition-colors shadow-sm flex items-center gap-2 whitespace-nowrap">
+<span class="material-symbols-outlined" style="font-size: 18px;">refresh</span>
+<span>Làm mới</span>
+</button>
+</div>
+</div>
+<div class="px-8 pb-4">
+<div id="alertMessage" class="mb-4 w-full h-[30px] flex items-center justify-center rounded bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-400 text-sm font-bold shadow-sm border border-emerald-200 dark:border-emerald-800/50 select-none transition-all hidden">
+Thao tác thành công.
+</div>
+</div>
+<div class="flex-1 px-8 pb-0 min-h-0 flex flex-col">
+<div class="flex-1 border border-slate-200 rounded-lg flex flex-col overflow-hidden">
+<div class="overflow-auto flex-1 custom-scrollbar bg-white">
+<table class="w-full min-w-[900px] border-collapse text-left">
+<thead class="bg-slate-50 sticky top-0 z-10">
+<tr class="table-header">
+<th class="w-40">
+<div class="flex items-center gap-1 cursor-pointer group">
+                                        MÃ ĐẶT PHÒNG
+                                        <span class="material-symbols-outlined text-slate-400 group-hover:text-slate-600" style="font-size: 16px;">arrow_drop_down</span>
+</div>
+</th>
+<th class="w-32">
+<div class="flex items-center gap-1 cursor-pointer group">
+                                        MÃ PHÒNG
+                                        <span class="material-symbols-outlined text-slate-400 opacity-50 group-hover:text-slate-600" style="font-size: 16px;">unfold_more</span>
+</div>
+</th>
+<th class="w-40">KHÁCH HÀNG</th>
+<th class="w-28">MÃ KH</th>
+<th class="w-40">
+<div class="flex items-center gap-1 cursor-pointer group">
+                                        LOẠI PHÒNG
+                                        <span class="material-symbols-outlined text-slate-400 opacity-50 group-hover:text-slate-600" style="font-size: 16px;">unfold_more</span>
+</div>
+</th>
+<th class="w-32">NGÀY NHẬN</th>
+<th class="w-32">NGÀY TRẢ</th>
+</tr>
+</thead>
+<tbody id="tableBody" class="divide-y divide-slate-100 bg-white">
+<tr class="table-row hover:bg-blue-50/50 transition-colors">
+<td class="font-semibold text-blue-600 cursor-pointer hover:underline">P101</td>
+<td class="text-slate-600">Đơn (Standard)</td>
+<td class="font-medium text-slate-900">500.000</td>
+<td class="text-blue-500 cursor-pointer hover:underline">KH0052</td>
+<td class="font-semibold text-blue-600 cursor-pointer hover:underline">Nguyễn Văn A</td>
+<td class="text-slate-500">10/10/2023</td>
+<td class="text-slate-500">12/10/2023</td>
+</tr>
+<tr class="table-row bg-blue-50/60 hover:bg-blue-100/50 transition-colors">
+<td class="font-bold text-blue-600 cursor-pointer hover:underline">P102</td>
+<td class="text-slate-600">Đôi (Deluxe)</td>
+<td class="font-bold text-slate-900">800.000</td>
+<td class="text-slate-400">KH0089</td>
+<td class="font-bold text-blue-600 cursor-pointer hover:underline">Trần Thị B</td>
+<td class="text-slate-500">09/10/2023</td>
+<td class="text-slate-500">12/10/2023</td>
+</tr>
+<tr class="table-row hover:bg-blue-50/50 transition-colors">
+<td class="font-semibold text-blue-600 cursor-pointer hover:underline">P201</td>
+<td class="text-slate-600">VIP (Suite)</td>
+<td class="font-medium text-slate-900">1.500.000</td>
+<td class="text-blue-500 cursor-pointer hover:underline">KH0103</td>
+<td class="font-semibold text-blue-600 cursor-pointer hover:underline">Lê Văn C</td>
+<td class="text-slate-500">11/10/2023</td>
+<td class="text-slate-500">13/10/2023</td>
+</tr>
+<tr class="table-row hover:bg-blue-50/50 transition-colors">
+<td class="font-semibold text-blue-600 cursor-pointer hover:underline">P205</td>
+<td class="text-slate-600">Đơn (Standard)</td>
+<td class="font-medium text-slate-900">500.000</td>
+<td class="text-blue-500 cursor-pointer hover:underline">KH0115</td>
+<td class="font-semibold text-blue-600 cursor-pointer hover:underline">Phạm Thị D</td>
+<td class="text-slate-500">05/10/2023</td>
+<td class="text-slate-500">12/10/2023</td>
+</tr>
+<tr class="h-full">
+<td colspan="7"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="p-8 mt-auto">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-8">
+<div id="selectedRoomSection" class="hidden">
+<p class="text-xs text-slate-500 mb-0.5">Phòng đang chọn:</p>
+<p id="selectedRoomText" class="text-sm font-bold text-slate-900">P102 - Trần Thị B</p>
+</div>
+<div id="divider" class="h-8 w-px bg-slate-200 hidden"></div>
+<div id="totalSection" class="hidden">
+<p class="text-xs text-slate-500 mb-0.5">Tổng tạm tính:</p>
+<p id="totalPrice" class="text-lg font-bold text-blue-600">2.900.000 đ</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<button id="checkoutBtn" class="h-11 px-6 rounded-lg bg-[#1a73e8] hover:bg-blue-600 text-white text-sm font-semibold flex items-center gap-2 transition-all shadow-md" disabled>
+<span class="material-symbols-outlined" style="font-size: 20px;">shopping_cart_checkout</span>
+<span>Trả phòng</span>
+</button>
+<div class="flex items-center gap-2 text-xs text-[#4c739a] dark:text-gray-400 bg-gray-50 dark:bg-[#253240] px-3 py-1.5 rounded-full border border-gray-100 dark:border-gray-600">
+<span class="material-symbols-outlined text-[16px] animate-spin" style="animation-duration: 3s;">hourglass_empty</span>
+<span>Thời gian thực thi: <span id="executionTime">0.0</span> ms</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script type="module" src="js/checkout.js"></script>
+
+<script>
+// Load sidebar
+fetch('sidebar.html')
+  .then(r => r.text())
+  .then(html => {
+    document.getElementById('sidebar-container').innerHTML = html;
+    const scripts = document.querySelectorAll('#sidebar-container script');
+    scripts.forEach(script => {
+      const newScript = document.createElement('script');
+      newScript.textContent = script.textContent;
+      document.body.appendChild(newScript);
+    });
+    setTimeout(() => initSidebar('checkout'), 100);
+  });
+</script>
+
+</body></html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Màn hình chính (Dashboard) - Tổng quan</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f8f9fa",
+                        "background-dark": "#101922",
+                        "sidebar-light": "#ffffff",
+                        "sidebar-dark": "#1a2634",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.375rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8; 
+        }
+        .dark ::-webkit-scrollbar-thumb {
+            background: #334155;
+        }
+        .dark ::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.filled {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#0d141b] dark:text-white font-display flex flex-col h-screen overflow-hidden antialiased selection:bg-primary/20">
+<div class="flex flex-1 overflow-hidden relative">
+<aside class="w-[260px] bg-sidebar-light dark:bg-sidebar-dark border-r border-slate-200 dark:border-slate-700 flex flex-col z-30 shrink-0 shadow-sm">
+<div class="h-16 flex items-center gap-3 px-6 border-b border-slate-100 dark:border-slate-700/50 shrink-0">
+<div class="w-8 h-8 rounded-lg bg-primary text-white flex items-center justify-center shadow-md shadow-primary/30">
+<span class="material-symbols-outlined text-[20px]">hotel_class</span>
+</div>
+<span class="font-bold text-lg tracking-tight text-slate-800 dark:text-white">HotelPro</span>
+</div>
+<div class="flex-1 overflow-y-auto py-6 px-3 flex flex-col gap-1.5">
+<div class="px-3 mb-2 text-xs font-semibold text-slate-400 uppercase tracking-wider">Chức năng chính</div>
+<button class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-primary/5 text-primary dark:text-primary-400 border border-primary/10 transition-all group text-left relative overflow-hidden">
+<div class="absolute inset-y-0 left-0 w-1 bg-primary rounded-r"></div>
+<span class="material-symbols-outlined filled text-[22px]">dashboard</span>
+<span class="text-sm font-bold">Tổng quan</span>
+</button>
+<a href="RoomManagementWidget.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-700/50 hover:text-primary dark:hover:text-primary transition-all group text-left">
+<span class="material-symbols-outlined text-[22px] group-hover:scale-110 transition-transform text-slate-400 group-hover:text-primary">bedroom_parent</span>
+<span class="text-sm font-medium">Quản lý phòng</span>
+</a>
+<a href="CustomerManagementWidget.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-700/50 hover:text-primary dark:hover:text-primary transition-all group text-left">
+<span class="material-symbols-outlined text-[22px] group-hover:scale-110 transition-transform text-slate-400 group-hover:text-primary">group</span>
+<span class="text-sm font-medium">Quản lý khách hàng</span>
+</a>
+<a href="ReservationManagementWidget.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-700/50 hover:text-primary dark:hover:text-primary transition-all group text-left">
+<span class="material-symbols-outlined text-[22px] group-hover:scale-110 transition-transform text-slate-400 group-hover:text-primary">calendar_month</span>
+<span class="text-sm font-medium">Đặt / Nhận phòng</span>
+</a>
+<a href="CheckOutWidget.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-700/50 hover:text-primary dark:hover:text-primary transition-all group text-left">
+<span class="material-symbols-outlined text-[22px] group-hover:scale-110 transition-transform text-slate-400 group-hover:text-primary transform rotate-180">login</span>
+<span class="text-sm font-medium">Trả phòng</span>
+</a>
+<div class="h-px bg-slate-100 dark:bg-slate-700 my-2 mx-3"></div>
+<div class="px-3 mb-2 text-xs font-semibold text-slate-400 uppercase tracking-wider">Quản lý</div>
+<a href="ServiceManagementWidget.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-700/50 hover:text-primary dark:hover:text-primary transition-all group text-left" data-page="service">
+<span class="material-symbols-outlined text-[22px] group-hover:scale-110 transition-transform text-slate-400 group-hover:text-primary">room_service</span>
+<span class="text-sm font-medium">Quản lý dịch vụ</span>
+</a>
+<a href="InvoiceManagementWidget.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-700/50 hover:text-primary dark:hover:text-primary transition-all group text-left" data-page="invoice">
+<span class="material-symbols-outlined text-[22px] group-hover:scale-110 transition-transform text-slate-400 group-hover:text-primary">receipt_long</span>
+<span class="text-sm font-medium">Quản lý hóa đơn</span>
+</a>
+<button class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-700/50 hover:text-primary dark:hover:text-primary transition-all group text-left">
+<span class="material-symbols-outlined text-[22px] group-hover:scale-110 transition-transform text-slate-400 group-hover:text-primary">analytics</span>
+<span class="text-sm font-medium">Thống kê</span>
+</button>
+<a href="AdvanceFeaturesWidget.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-700/50 hover:text-primary dark:hover:text-primary transition-all group text-left" data-page="advanced">
+<span class="material-symbols-outlined text-[22px] group-hover:scale-110 transition-transform text-slate-400 group-hover:text-primary">settings</span>
+<span class="text-sm font-medium">Chức năng nâng cao</span>
+</a>
+</div>
+<div class="p-4 border-t border-slate-100 dark:border-slate-700/50 bg-slate-50 dark:bg-[#151f2b]">
+<button class="w-full flex items-center gap-3 px-3 py-2 rounded-lg text-slate-500 hover:bg-white hover:text-red-600 hover:shadow-sm dark:text-slate-400 dark:hover:bg-slate-700 dark:hover:text-red-400 transition-all border border-transparent hover:border-slate-200 dark:hover:border-slate-600">
+<span class="material-symbols-outlined text-[22px]">logout</span>
+<span class="text-sm font-medium">Thoát ứng dụng</span>
+</button>
+</div>
+</aside>
+<main class="flex-1 flex flex-col relative min-w-0 bg-background-light dark:bg-background-dark overflow-hidden">
+<header class="h-16 bg-white dark:bg-[#1a2634] border-b border-slate-200 dark:border-slate-700 flex items-center justify-between px-8 shrink-0 z-20 shadow-[0_1px_2px_rgba(0,0,0,0.02)]">
+<div class="flex items-center gap-4">
+<h2 class="text-xl font-bold text-slate-800 dark:text-white">Tổng quan (Dashboard)</h2>
+<div class="hidden md:flex items-center text-xs font-medium text-slate-500 bg-slate-100 dark:bg-slate-700 px-2.5 py-1 rounded-full border border-slate-200 dark:border-slate-600">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mr-2"></span>
+                         Hệ thống hoạt động bình thường
+                     </div>
+</div>
+<div class="flex items-center gap-3">
+<div class="relative hidden lg:block group">
+<span class="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 material-symbols-outlined text-[20px] group-focus-within:text-primary transition-colors">search</span>
+<input class="pl-10 pr-4 py-2 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-600 rounded-lg text-sm w-72 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" placeholder="Tìm kiếm phòng, khách hàng..." type="text"/>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-500 hover:text-primary transition-colors border border-transparent hover:border-slate-200 dark:hover:border-slate-600 relative">
+<span class="material-symbols-outlined text-[22px]">notifications</span>
+<span class="absolute top-2.5 right-2.5 w-2 h-2 bg-red-500 rounded-full border-2 border-white dark:border-[#1a2634]"></span>
+</button>
+<div class="h-8 w-px bg-slate-200 dark:bg-slate-700 mx-1"></div>
+<div class="flex items-center gap-3 pl-1 cursor-pointer hover:opacity-80 transition-opacity">
+<div class="text-right hidden sm:block">
+<div class="text-sm font-bold text-slate-700 dark:text-slate-200">Admin User</div>
+<div class="text-[11px] text-slate-500 uppercase">Quản trị viên</div>
+</div>
+<div class="w-9 h-9 rounded-lg bg-primary text-white flex items-center justify-center font-bold shadow-md shadow-primary/20">A</div>
+</div>
+</div>
+</header>
+<div class="flex-1 overflow-y-auto p-6 md:p-8 scroll-smooth">
+<div class="max-w-7xl mx-auto flex flex-col gap-6">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-white dark:bg-[#1a2634] rounded-xl p-6 border border-slate-200 dark:border-slate-700 shadow-sm flex items-start justify-between relative overflow-hidden group">
+<div class="absolute right-0 top-0 w-32 h-32 bg-blue-50/50 dark:bg-blue-900/10 rounded-bl-[100px] -mr-8 -mt-8 pointer-events-none transition-transform group-hover:scale-110"></div>
+<div class="relative z-10 flex flex-col justify-between h-full">
+<div>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-medium uppercase tracking-wide">Phòng đang thuê</p>
+<div class="flex items-baseline gap-2 mt-2">
+<h4 id="stat-occupied" class="text-3xl font-bold text-slate-800 dark:text-white">0</h4>
+<span class="text-sm text-slate-400 font-medium">/ <span id="stat-total">0</span> phòng</span>
+</div>
+</div>
+<div class="mt-4">
+<div class="w-full h-1.5 bg-slate-100 dark:bg-slate-700 rounded-full overflow-hidden">
+<div id="stat-occupied-bar" class="h-full bg-primary rounded-full" style="width: 0%"></div>
+</div>
+<p class="text-xs text-slate-400 mt-2">Tỷ lệ lấp đầy: <span id="stat-occupied-percent" class="text-slate-700 dark:text-white font-bold">0%</span></p>
+</div>
+</div>
+<div class="w-12 h-12 rounded-xl bg-blue-50 dark:bg-blue-900/20 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">bed</span>
+</div>
+</div>
+<div class="bg-white dark:bg-[#1a2634] rounded-xl p-6 border border-slate-200 dark:border-slate-700 shadow-sm flex items-start justify-between relative overflow-hidden group">
+<div class="absolute right-0 top-0 w-32 h-32 bg-emerald-50/50 dark:bg-emerald-900/10 rounded-bl-[100px] -mr-8 -mt-8 pointer-events-none transition-transform group-hover:scale-110"></div>
+<div class="relative z-10 flex flex-col justify-between h-full">
+<div>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-medium uppercase tracking-wide">Doanh thu tháng này</p>
+<div class="flex items-baseline gap-2 mt-2">
+<h4 id="stat-revenue" class="text-3xl font-bold text-slate-800 dark:text-white">0</h4>
+<span class="text-xs text-slate-400 font-medium">VNĐ</span>
+</div>
+</div>
+<div class="mt-auto pt-4">
+<p class="text-sm text-slate-500 dark:text-slate-400 flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                    <span id="stat-revenue-note" class="font-bold text-slate-700 dark:text-white">Tổng doanh thu tháng này</span>
+</p>
+</div>
+</div>
+<div class="w-12 h-12 rounded-xl bg-emerald-50 dark:bg-emerald-900/20 text-emerald-600 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">attach_money</span>
+</div>
+</div>
+<div class="bg-white dark:bg-[#1a2634] rounded-xl p-6 border border-slate-200 dark:border-slate-700 shadow-sm flex items-start justify-between relative overflow-hidden group">
+<div class="absolute right-0 top-0 w-32 h-32 bg-purple-50/50 dark:bg-purple-900/10 rounded-bl-[100px] -mr-8 -mt-8 pointer-events-none transition-transform group-hover:scale-110"></div>
+<div class="relative z-10 flex flex-col justify-between h-full">
+<div>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-medium uppercase tracking-wide">Tổng khách hàng</p>
+<div class="flex items-baseline gap-2 mt-2">
+<h4 id="stat-customers" class="text-3xl font-bold text-slate-800 dark:text-white">0</h4>
+<span class="text-xs text-slate-400 font-medium">người</span>
+</div>
+</div>
+<div class="mt-auto pt-4">
+<p class="text-sm text-emerald-600 dark:text-emerald-400 flex items-center gap-1 font-medium bg-emerald-50 dark:bg-emerald-900/20 px-2 py-1 rounded w-fit">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+                    <span id="stat-customers-note">Tháng này</span>
+                </p>
+</div>
+</div>
+<div class="w-12 h-12 rounded-xl bg-purple-50 dark:bg-purple-900/20 text-purple-600 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">group</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+<div class="lg:col-span-2 bg-white dark:bg-[#1a2634] border border-slate-200 dark:border-slate-700 rounded-xl shadow-sm p-6">
+<div class="flex items-center justify-between mb-6">
+<h3 class="text-lg font-bold text-slate-800 dark:text-white flex items-center gap-2">
+<span class="material-symbols-outlined text-slate-400">pie_chart</span>
+                Tổng quan loại phòng
+            </h3>
+<button class="text-sm text-primary hover:underline">Xem chi tiết</button>
+</div>
+<div id="room-type-summary" class="flex flex-col gap-6"></div>
+</div>
+<div class="bg-white dark:bg-[#1a2634] border border-slate-200 dark:border-slate-700 rounded-xl shadow-sm flex flex-col overflow-hidden">
+<div class="p-4 border-b border-slate-100 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-800/30">
+<h3 class="font-bold text-slate-800 dark:text-white text-sm">Hoạt động gần đây</h3>
+</div>
+<div class="flex-1 overflow-y-auto p-0">
+<div id="recent-activities" class="flex flex-col"></div>
+</div>
+<div class="p-3 border-t border-slate-100 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/30 text-center">
+<button class="text-xs font-semibold text-primary hover:text-primary/80">Xem tất cả</button>
+</div>
+</div>
+</div>
+<section>
+<h3 class="text-lg font-bold text-slate-800 dark:text-white flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-slate-400">grid_view</span>
+    Sơ đồ phòng (Tầng 1)
+</h3>
+<div class="bg-white dark:bg-[#1a2634] p-6 border border-slate-200 dark:border-slate-700 rounded-xl shadow-sm">
+<div id="room-map" class="flex flex-wrap gap-4 justify-center sm:justify-start"></div>
+</div>
+</section>
+</div>
+</div>
+</main>
+</div>
+<footer class="bg-white dark:bg-[#1a2634] border-t border-slate-200 dark:border-slate-700 px-4 py-1.5 flex items-center justify-between text-[11px] text-slate-500 dark:text-slate-400 shrink-0 select-none shadow-[0_-1px_3px_rgba(0,0,0,0.02)] z-40">
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-1.5 px-2 py-0.5 rounded hover:bg-slate-100 dark:hover:bg-slate-700 cursor-help transition-colors">
+<div class="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse"></div>
+<span>Hệ thống sẵn sàng</span>
+</div>
+<div class="h-3 w-px bg-slate-300 dark:bg-slate-600"></div>
+<div class="flex items-center gap-1 px-2 py-0.5 rounded hover:bg-slate-100 dark:hover:bg-slate-700 cursor-pointer transition-colors">
+<span class="material-symbols-outlined text-[12px]">person</span>
+<span>User: <strong>Admin</strong></span>
+</div>
+<div class="h-3 w-px bg-slate-300 dark:bg-slate-600"></div>
+<div class="flex items-center gap-1 px-2 py-0.5 rounded hover:bg-slate-100 dark:hover:bg-slate-700 cursor-pointer transition-colors">
+<span class="material-symbols-outlined text-[12px]">database</span>
+<span>DB: <strong>Localhost:3306</strong></span>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="hidden sm:inline">Thời gian thực thi: 0.04s</span>
+<div class="h-3 w-px bg-slate-300 dark:bg-slate-600 hidden sm:block"></div>
+<div class="flex items-center gap-1 font-mono bg-slate-100 dark:bg-slate-800 px-2 py-0.5 rounded">
+<span class="material-symbols-outlined text-[12px]">schedule</span>
+                14:30:45
+            </div>
+</div>
+</footer>
+
+    <script type="module" src="js/dashboard.js?v=20260113"></script>
+</body></html>

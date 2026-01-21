@@ -1,0 +1,145 @@
+<div class="w-full max-w-[560px] flex flex-col bg-white dark:bg-slate-800 rounded-xl shadow-2xl overflow-hidden ring-1 ring-slate-900/5 dark:ring-white/10">
+<div class="flex items-center justify-between px-6 py-4 border-b border-slate-100 dark:border-slate-700 bg-white dark:bg-slate-800 sticky top-0 z-10">
+<h3 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-tight">
+                Tìm tổ hợp phòng
+            </h3>
+<button id="dialogClose" class="group p-2 -mr-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors focus:outline-none focus:ring-2 focus:ring-primary/50">
+<span class="material-symbols-outlined text-slate-400 group-hover:text-slate-600 dark:text-slate-500 dark:group-hover:text-slate-300">close</span>
+</button>
+</div>
+<div class="flex-1 overflow-y-auto max-h-[70vh] p-6 space-y-6">
+<div class="space-y-3">
+<label class="block text-sm font-semibold text-slate-800 dark:text-slate-200">
+                    Số loại phòng cần tìm (tối đa 3)
+                </label>
+<div class="flex items-center justify-between p-1 bg-slate-50 dark:bg-slate-900/50 rounded-lg border border-slate-200 dark:border-slate-700">
+<div class="pl-3 text-sm text-slate-500 dark:text-slate-400 font-medium">
+                        Số lượng nhóm yêu cầu
+                    </div>
+<div class="flex items-center gap-1 bg-white dark:bg-slate-800 p-1 rounded-md shadow-sm border border-slate-100 dark:border-slate-600">
+<button id="typeCountDec" class="w-8 h-8 flex items-center justify-center rounded hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-500 hover:text-primary dark:text-slate-400 transition-colors">
+<span class="material-symbols-outlined text-[20px]">remove</span>
+</button>
+<input id="typeCount" class="w-12 text-center text-slate-900 dark:text-white font-semibold border-none bg-transparent focus:ring-0 p-0 [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none" max="3" min="1" type="number" value="3" />
+<button id="typeCountInc" class="w-8 h-8 flex items-center justify-center rounded hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-500 hover:text-primary dark:text-slate-400 transition-colors">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<div class="space-y-4">
+<div class="flex justify-between items-end border-b border-slate-100 dark:border-slate-700 pb-2">
+<p class="text-sm font-semibold text-slate-800 dark:text-slate-200">
+                        Danh sách yêu cầu
+                    </p>
+<span class="text-xs text-slate-400 dark:text-slate-500 font-medium bg-slate-50 dark:bg-slate-700/50 px-2 py-0.5 rounded">
+                        Tối đa 3 dòng
+                    </span>
+</div>
+<div class="grid grid-cols-12 gap-4 px-0.5">
+<div class="col-span-8 text-[13px] font-semibold text-slate-500 uppercase tracking-wide">Loại phòng</div>
+<div class="col-span-4 text-[13px] font-semibold text-slate-500 uppercase tracking-wide">Số lượng</div>
+</div>
+
+<div class="grid grid-cols-12 gap-4 items-start" data-row="1">
+<div class="col-span-8">
+<div class="relative">
+<span class="absolute left-3.5 top-1/2 -translate-y-1/2 material-symbols-outlined text-slate-400 pointer-events-none text-[22px]">single_bed</span>
+<select id="roomType1" class="w-full h-[50px] pl-11 pr-10 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg text-[15px] font-medium text-slate-700 dark:text-slate-200 focus:border-primary focus:ring-1 focus:ring-primary shadow-sm transition-shadow appearance-none cursor-pointer hover:border-slate-300 dark:hover:border-slate-600">
+<option value="">Chọn loại phòng</option>
+<option value="Standard">Standard</option>
+<option value="Deluxe">Deluxe</option>
+<option value="VIP">VIP</option>
+</select>
+<span class="absolute right-3 top-1/2 -translate-y-1/2 material-symbols-outlined text-slate-400 pointer-events-none text-[24px]">arrow_drop_down</span>
+</div>
+</div>
+<div class="col-span-4">
+<div class="relative h-[50px] bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg shadow-sm hover:border-slate-300 dark:hover:border-slate-600 focus-within:border-primary focus-within:ring-1 focus-within:ring-primary flex overflow-hidden">
+<input id="roomQty1" class="flex-1 h-full pl-4 pr-2 bg-transparent border-none text-[15px] font-medium text-slate-700 dark:text-slate-200 focus:ring-0 text-left [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none" min="1" type="number" value="1" />
+<div class="w-8 flex flex-col border-l border-slate-200 dark:border-slate-700">
+<button class="flex-1 flex items-center justify-center hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-400 hover:text-primary transition-colors" data-qty="roomQty1" data-action="inc">
+<span class="material-symbols-outlined text-[16px]">expand_less</span>
+</button>
+<button class="flex-1 flex items-center justify-center hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-400 hover:text-primary transition-colors border-t border-slate-200 dark:border-slate-700" data-qty="roomQty1" data-action="dec">
+<span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="grid grid-cols-12 gap-4 items-start" data-row="2">
+<div class="col-span-8">
+<div class="relative">
+<span class="absolute left-3.5 top-1/2 -translate-y-1/2 material-symbols-outlined text-slate-400 pointer-events-none text-[22px]">bed</span>
+<select id="roomType2" class="w-full h-[50px] pl-11 pr-10 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg text-[15px] font-medium text-slate-700 dark:text-slate-200 focus:border-primary focus:ring-1 focus:ring-primary shadow-sm transition-shadow appearance-none cursor-pointer hover:border-slate-300 dark:hover:border-slate-600">
+<option value="">Chọn loại phòng</option>
+<option value="Standard">Standard</option>
+<option value="Deluxe">Deluxe</option>
+<option value="VIP">VIP</option>
+</select>
+<span class="absolute right-3 top-1/2 -translate-y-1/2 material-symbols-outlined text-slate-400 pointer-events-none text-[24px]">arrow_drop_down</span>
+</div>
+</div>
+<div class="col-span-4">
+<div class="relative h-[50px] bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg shadow-sm hover:border-slate-300 dark:hover:border-slate-600 focus-within:border-primary focus-within:ring-1 focus-within:ring-primary flex overflow-hidden">
+<input id="roomQty2" class="flex-1 h-full pl-4 pr-2 bg-transparent border-none text-[15px] font-medium text-slate-700 dark:text-slate-200 focus:ring-0 text-left [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none" min="1" type="number" value="1" />
+<div class="w-8 flex flex-col border-l border-slate-200 dark:border-slate-700">
+<button class="flex-1 flex items-center justify-center hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-400 hover:text-primary transition-colors" data-qty="roomQty2" data-action="inc">
+<span class="material-symbols-outlined text-[16px]">expand_less</span>
+</button>
+<button class="flex-1 flex items-center justify-center hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-400 hover:text-primary transition-colors border-t border-slate-200 dark:border-slate-700" data-qty="roomQty2" data-action="dec">
+<span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="grid grid-cols-12 gap-4 items-start" data-row="3">
+<div class="col-span-8">
+<div class="relative">
+<span class="absolute left-3.5 top-1/2 -translate-y-1/2 material-symbols-outlined text-slate-400 pointer-events-none text-[22px]">crown</span>
+<select id="roomType3" class="w-full h-[50px] pl-11 pr-10 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg text-[15px] font-medium text-slate-700 dark:text-slate-200 focus:border-primary focus:ring-1 focus:ring-primary shadow-sm transition-shadow appearance-none cursor-pointer hover:border-slate-300 dark:hover:border-slate-600">
+<option value="">Chọn loại phòng</option>
+<option value="Standard">Standard</option>
+<option value="Deluxe">Deluxe</option>
+<option value="VIP">VIP</option>
+</select>
+<span class="absolute right-3 top-1/2 -translate-y-1/2 material-symbols-outlined text-slate-400 pointer-events-none text-[24px]">arrow_drop_down</span>
+</div>
+</div>
+<div class="col-span-4">
+<div class="relative h-[50px] bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg shadow-sm hover:border-slate-300 dark:hover:border-slate-600 focus-within:border-primary focus-within:ring-1 focus-within:ring-primary flex overflow-hidden">
+<input id="roomQty3" class="flex-1 h-full pl-4 pr-2 bg-transparent border-none text-[15px] font-medium text-slate-700 dark:text-slate-200 focus:ring-0 text-left [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none" min="1" type="number" value="1" />
+<div class="w-8 flex flex-col border-l border-slate-200 dark:border-slate-700">
+<button class="flex-1 flex items-center justify-center hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-400 hover:text-primary transition-colors" data-qty="roomQty3" data-action="inc">
+<span class="material-symbols-outlined text-[16px]">expand_less</span>
+</button>
+<button class="flex-1 flex items-center justify-center hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-400 hover:text-primary transition-colors border-t border-slate-200 dark:border-slate-700" data-qty="roomQty3" data-action="dec">
+<span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="flex gap-3 p-3 bg-blue-50 dark:bg-blue-500/10 rounded-lg border border-blue-100 dark:border-blue-500/20">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5 shrink-0">info</span>
+<div class="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
+                    Thuật toán sẽ duyệt qua các phòng trống để tìm tổ hợp phù hợp. Thời gian tìm kiếm có thể thay đổi tùy thuộc vào số lượng phòng.
+                </div>
+</div>
+</div>
+<div class="px-6 py-4 bg-slate-50 dark:bg-slate-900/50 border-t border-slate-100 dark:border-slate-700 flex justify-end items-center gap-3">
+<button id="dialogCancel" class="px-4 py-2.5 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-700 focus:ring-2 focus:ring-slate-200 dark:focus:ring-slate-700 transition-all shadow-sm">
+                Hủy bỏ
+            </button>
+<button id="dialogSubmit" class="px-5 py-2.5 rounded-lg bg-primary text-white text-sm font-medium hover:bg-blue-600 focus:ring-2 focus:ring-primary/50 focus:ring-offset-2 dark:focus:ring-offset-slate-900 transition-all shadow-lg shadow-blue-500/20 flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">search</span>
+                Tìm kiếm
+            </button>
+</div>
+</div>
