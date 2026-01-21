@@ -1,0 +1,134 @@
+[
+{
+  "directory": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build",
+  "command": "C:\\Users\\LAPTOP~1\\DOWNLO~1\\WINLIB~1.0-R\\mingw64\\bin\\G__~1.EXE -I\"C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/include\" -std=gnu++17 -Wall -Wextra -o CMakeFiles\\server_http.dir\\src\\server_http.cpp.obj -c \"C:\\Users\\Laptop K1\\OneDrive\\Documents\\Project 1\\Backend\\src\\server_http.cpp\"",
+  "file": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/src/server_http.cpp",
+  "output": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build/CMakeFiles/server_http.dir/src/server_http.cpp.obj"
+},
+{
+  "directory": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build",
+  "command": "C:\\Users\\LAPTOP~1\\DOWNLO~1\\WINLIB~1.0-R\\mingw64\\bin\\G__~1.EXE -I\"C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/include\" -std=gnu++17 -Wall -Wextra -o CMakeFiles\\server_http.dir\\src\\RoomManagement.cpp.obj -c \"C:\\Users\\Laptop K1\\OneDrive\\Documents\\Project 1\\Backend\\src\\RoomManagement.cpp\"",
+  "file": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/src/RoomManagement.cpp",
+  "output": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build/CMakeFiles/server_http.dir/src/RoomManagement.cpp.obj"
+},
+{
+  "directory": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build",
+  "command": "C:\\Users\\LAPTOP~1\\DOWNLO~1\\WINLIB~1.0-R\\mingw64\\bin\\G__~1.EXE -I\"C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/include\" -std=gnu++17 -Wall -Wextra -o CMakeFiles\\server_http.dir\\src\\ServiceManagement.cpp.obj -c \"C:\\Users\\Laptop K1\\OneDrive\\Documents\\Project 1\\Backend\\src\\ServiceManagement.cpp\"",
+  "file": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/src/ServiceManagement.cpp",
+  "output": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build/CMakeFiles/server_http.dir/src/ServiceManagement.cpp.obj"
+},
+{
+  "directory": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build",
+  "command": "C:\\Users\\LAPTOP~1\\DOWNLO~1\\WINLIB~1.0-R\\mingw64\\bin\\G__~1.EXE -I\"C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/include\" -std=gnu++17 -Wall -Wextra -o CMakeFiles\\server_http.dir\\src\\CustomerManagement.cpp.obj -c \"C:\\Users\\Laptop K1\\OneDrive\\Documents\\Project 1\\Backend\\src\\CustomerManagement.cpp\"",
+  "file": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/src/CustomerManagement.cpp",
+  "output": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build/CMakeFiles/server_http.dir/src/CustomerManagement.cpp.obj"
+},
+{
+  "directory": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build",
+  "command": "C:\\Users\\LAPTOP~1\\DOWNLO~1\\WINLIB~1.0-R\\mingw64\\bin\\G__~1.EXE -I\"C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/include\" -std=gnu++17 -Wall -Wextra -o CMakeFiles\\server_http.dir\\src\\ReservationManagement.cpp.obj -c \"C:\\Users\\Laptop K1\\OneDrive\\Documents\\Project 1\\Backend\\src\\ReservationManagement.cpp\"",
+  "file": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/src/ReservationManagement.cpp",
+  "output": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build/CMakeFiles/server_http.dir/src/ReservationManagement.cpp.obj"
+},
+{
+  "directory": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build",
+  "command": "C:\\Users\\LAPTOP~1\\DOWNLO~1\\WINLIB~1.0-R\\mingw64\\bin\\G__~1.EXE -I\"C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/include\" -std=gnu++17 -Wall -Wextra -o CMakeFiles\\server_http.dir\\src\\InvoiceManagement.cpp.obj -c \"C:\\Users\\Laptop K1\\OneDrive\\Documents\\Project 1\\Backend\\src\\InvoiceManagement.cpp\"",
+  "file": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/src/InvoiceManagement.cpp",
+  "output": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build/CMakeFiles/server_http.dir/src/InvoiceManagement.cpp.obj"
+},
+{
+  "directory": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build",
+  "command": "C:\\Users\\LAPTOP~1\\DOWNLO~1\\WINLIB~1.0-R\\mingw64\\bin\\G__~1.EXE -I\"C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/include\" -std=gnu++17 -Wall -Wextra -o CMakeFiles\\server_http.dir\\src\\Structures.cpp.obj -c \"C:\\Users\\Laptop K1\\OneDrive\\Documents\\Project 1\\Backend\\src\\Structures.cpp\"",
+  "file": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/src/Structures.cpp",
+  "output": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build/CMakeFiles/server_http.dir/src/Structures.cpp.obj"
+},
+{
+  "directory": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build",
+  "command": "C:\\Users\\LAPTOP~1\\DOWNLO~1\\WINLIB~1.0-R\\mingw64\\bin\\G__~1.EXE -I\"C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/include\" -std=gnu++17 -Wall -Wextra -o CMakeFiles\\server_http.dir\\src\\JsonHelper.cpp.obj -c \"C:\\Users\\Laptop K1\\OneDrive\\Documents\\Project 1\\Backend\\src\\JsonHelper.cpp\"",
+  "file": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/src/JsonHelper.cpp",
+  "output": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build/CMakeFiles/server_http.dir/src/JsonHelper.cpp.obj"
+},
+{
+  "directory": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build",
+  "command": "C:\\Users\\LAPTOP~1\\DOWNLO~1\\WINLIB~1.0-R\\mingw64\\bin\\G__~1.EXE -I\"C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/include\" -std=gnu++17 -Wall -Wextra -o CMakeFiles\\server_http.dir\\src\\AdvanceFeatures.cpp.obj -c \"C:\\Users\\Laptop K1\\OneDrive\\Documents\\Project 1\\Backend\\src\\AdvanceFeatures.cpp\"",
+  "file": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/src/AdvanceFeatures.cpp",
+  "output": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build/CMakeFiles/server_http.dir/src/AdvanceFeatures.cpp.obj"
+},
+{
+  "directory": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build",
+  "command": "C:\\Users\\LAPTOP~1\\DOWNLO~1\\WINLIB~1.0-R\\mingw64\\bin\\G__~1.EXE -I\"C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/include\" -std=gnu++17 -Wall -Wextra -o CMakeFiles\\server_http2.dir\\src\\server_http.cpp.obj -c \"C:\\Users\\Laptop K1\\OneDrive\\Documents\\Project 1\\Backend\\src\\server_http.cpp\"",
+  "file": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/src/server_http.cpp",
+  "output": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build/CMakeFiles/server_http2.dir/src/server_http.cpp.obj"
+},
+{
+  "directory": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build",
+  "command": "C:\\Users\\LAPTOP~1\\DOWNLO~1\\WINLIB~1.0-R\\mingw64\\bin\\G__~1.EXE -I\"C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/include\" -std=gnu++17 -Wall -Wextra -o CMakeFiles\\server_http2.dir\\src\\RoomManagement.cpp.obj -c \"C:\\Users\\Laptop K1\\OneDrive\\Documents\\Project 1\\Backend\\src\\RoomManagement.cpp\"",
+  "file": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/src/RoomManagement.cpp",
+  "output": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build/CMakeFiles/server_http2.dir/src/RoomManagement.cpp.obj"
+},
+{
+  "directory": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build",
+  "command": "C:\\Users\\LAPTOP~1\\DOWNLO~1\\WINLIB~1.0-R\\mingw64\\bin\\G__~1.EXE -I\"C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/include\" -std=gnu++17 -Wall -Wextra -o CMakeFiles\\server_http2.dir\\src\\ServiceManagement.cpp.obj -c \"C:\\Users\\Laptop K1\\OneDrive\\Documents\\Project 1\\Backend\\src\\ServiceManagement.cpp\"",
+  "file": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/src/ServiceManagement.cpp",
+  "output": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build/CMakeFiles/server_http2.dir/src/ServiceManagement.cpp.obj"
+},
+{
+  "directory": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build",
+  "command": "C:\\Users\\LAPTOP~1\\DOWNLO~1\\WINLIB~1.0-R\\mingw64\\bin\\G__~1.EXE -I\"C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/include\" -std=gnu++17 -Wall -Wextra -o CMakeFiles\\server_http2.dir\\src\\CustomerManagement.cpp.obj -c \"C:\\Users\\Laptop K1\\OneDrive\\Documents\\Project 1\\Backend\\src\\CustomerManagement.cpp\"",
+  "file": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/src/CustomerManagement.cpp",
+  "output": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build/CMakeFiles/server_http2.dir/src/CustomerManagement.cpp.obj"
+},
+{
+  "directory": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build",
+  "command": "C:\\Users\\LAPTOP~1\\DOWNLO~1\\WINLIB~1.0-R\\mingw64\\bin\\G__~1.EXE -I\"C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/include\" -std=gnu++17 -Wall -Wextra -o CMakeFiles\\server_http2.dir\\src\\ReservationManagement.cpp.obj -c \"C:\\Users\\Laptop K1\\OneDrive\\Documents\\Project 1\\Backend\\src\\ReservationManagement.cpp\"",
+  "file": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/src/ReservationManagement.cpp",
+  "output": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build/CMakeFiles/server_http2.dir/src/ReservationManagement.cpp.obj"
+},
+{
+  "directory": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build",
+  "command": "C:\\Users\\LAPTOP~1\\DOWNLO~1\\WINLIB~1.0-R\\mingw64\\bin\\G__~1.EXE -I\"C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/include\" -std=gnu++17 -Wall -Wextra -o CMakeFiles\\server_http2.dir\\src\\InvoiceManagement.cpp.obj -c \"C:\\Users\\Laptop K1\\OneDrive\\Documents\\Project 1\\Backend\\src\\InvoiceManagement.cpp\"",
+  "file": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/src/InvoiceManagement.cpp",
+  "output": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build/CMakeFiles/server_http2.dir/src/InvoiceManagement.cpp.obj"
+},
+{
+  "directory": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build",
+  "command": "C:\\Users\\LAPTOP~1\\DOWNLO~1\\WINLIB~1.0-R\\mingw64\\bin\\G__~1.EXE -I\"C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/include\" -std=gnu++17 -Wall -Wextra -o CMakeFiles\\server_http2.dir\\src\\Structures.cpp.obj -c \"C:\\Users\\Laptop K1\\OneDrive\\Documents\\Project 1\\Backend\\src\\Structures.cpp\"",
+  "file": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/src/Structures.cpp",
+  "output": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build/CMakeFiles/server_http2.dir/src/Structures.cpp.obj"
+},
+{
+  "directory": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build",
+  "command": "C:\\Users\\LAPTOP~1\\DOWNLO~1\\WINLIB~1.0-R\\mingw64\\bin\\G__~1.EXE -I\"C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/include\" -std=gnu++17 -Wall -Wextra -o CMakeFiles\\server_http2.dir\\src\\JsonHelper.cpp.obj -c \"C:\\Users\\Laptop K1\\OneDrive\\Documents\\Project 1\\Backend\\src\\JsonHelper.cpp\"",
+  "file": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/src/JsonHelper.cpp",
+  "output": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build/CMakeFiles/server_http2.dir/src/JsonHelper.cpp.obj"
+},
+{
+  "directory": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build",
+  "command": "C:\\Users\\LAPTOP~1\\DOWNLO~1\\WINLIB~1.0-R\\mingw64\\bin\\G__~1.EXE -I\"C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/include\" -std=gnu++17 -Wall -Wextra -o CMakeFiles\\server_http2.dir\\src\\AdvanceFeatures.cpp.obj -c \"C:\\Users\\Laptop K1\\OneDrive\\Documents\\Project 1\\Backend\\src\\AdvanceFeatures.cpp\"",
+  "file": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/src/AdvanceFeatures.cpp",
+  "output": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build/CMakeFiles/server_http2.dir/src/AdvanceFeatures.cpp.obj"
+},
+{
+  "directory": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build",
+  "command": "C:\\Users\\LAPTOP~1\\DOWNLO~1\\WINLIB~1.0-R\\mingw64\\bin\\G__~1.EXE -I\"C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/include\" -std=gnu++17 -o CMakeFiles\\benchmark.dir\\src\\BenchmarkRunner.cpp.obj -c \"C:\\Users\\Laptop K1\\OneDrive\\Documents\\Project 1\\Backend\\src\\BenchmarkRunner.cpp\"",
+  "file": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/src/BenchmarkRunner.cpp",
+  "output": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build/CMakeFiles/benchmark.dir/src/BenchmarkRunner.cpp.obj"
+},
+{
+  "directory": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build",
+  "command": "C:\\Users\\LAPTOP~1\\DOWNLO~1\\WINLIB~1.0-R\\mingw64\\bin\\G__~1.EXE -I\"C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/include\" -std=gnu++17 -o CMakeFiles\\benchmark.dir\\src\\AdvanceFeatures.cpp.obj -c \"C:\\Users\\Laptop K1\\OneDrive\\Documents\\Project 1\\Backend\\src\\AdvanceFeatures.cpp\"",
+  "file": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/src/AdvanceFeatures.cpp",
+  "output": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build/CMakeFiles/benchmark.dir/src/AdvanceFeatures.cpp.obj"
+},
+{
+  "directory": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build",
+  "command": "C:\\Users\\LAPTOP~1\\DOWNLO~1\\WINLIB~1.0-R\\mingw64\\bin\\G__~1.EXE -I\"C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/include\" -std=gnu++17 -o CMakeFiles\\benchmark.dir\\src\\Structures.cpp.obj -c \"C:\\Users\\Laptop K1\\OneDrive\\Documents\\Project 1\\Backend\\src\\Structures.cpp\"",
+  "file": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/src/Structures.cpp",
+  "output": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build/CMakeFiles/benchmark.dir/src/Structures.cpp.obj"
+},
+{
+  "directory": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build",
+  "command": "C:\\Users\\LAPTOP~1\\DOWNLO~1\\WINLIB~1.0-R\\mingw64\\bin\\G__~1.EXE -I\"C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/include\" -std=gnu++17 -o CMakeFiles\\benchmark.dir\\src\\JsonHelper.cpp.obj -c \"C:\\Users\\Laptop K1\\OneDrive\\Documents\\Project 1\\Backend\\src\\JsonHelper.cpp\"",
+  "file": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/src/JsonHelper.cpp",
+  "output": "C:/Users/Laptop K1/OneDrive/Documents/Project 1/Backend/cmake-build/CMakeFiles/benchmark.dir/src/JsonHelper.cpp.obj"
+}
+]
